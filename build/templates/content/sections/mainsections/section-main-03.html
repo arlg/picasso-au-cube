@@ -1,0 +1,67 @@
+<section class="section-main-03 section-main mod-main-module">
+    
+    <div class="moreinfo-layer">
+
+         <div class="text-under smaller" data-id="0">
+           {{content.module3.moreinfo1|raw}}
+        </div>
+        <div class="text-under" data-id="2">
+            {{content.module3.moreinfo2|raw}}
+        </div>
+        <div class="text-under" data-id="5">
+           {{content.module3.moreinfo3|raw}}
+        </div>
+        <div class="text-under" data-id="1">
+            {{content.module3.moreinfo4|raw}}
+        </div>
+        <div class="text-under" data-id="4">
+            {{content.module3.moreinfo5|raw}}
+        </div>
+        <div class="text-under" data-id="3">
+           {{content.module3.moreinfo6|raw}}
+        </div>
+
+    </div>
+
+    <div class="flat-layer">
+
+        <a href="/{{common.link_module4}}" class="see-all-button"></a>
+
+        <a href="/" class="home-link"></a>
+
+    </div>
+
+    <div class="interactive-layer">
+        
+        <div class="video-play-button">
+            <img src="{{baseurl}}img/play-button.png" alt="Play" width="41" height="47" />
+        </div>
+
+        
+        <header>
+            <h2>
+                <p>{{content.module3.title|raw}}</p><div class="background"></div>
+            </h2>
+            <div class="list-wrapper">
+                <ul>
+                    {% for item in content.module3.list %}
+
+                        <li data-youtubeid="{{ item.id }}">{{ item.name }}</li>
+                    
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="action-button button-relaunch">
+        
+                <div class="button">
+                    <p>{{common.relaunch}}</p>
+                    <div></div>
+                </div>
+                
+            </div>
+                
+        </header>
+    </div>   
+
+</section>

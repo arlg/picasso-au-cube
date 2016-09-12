@@ -1,0 +1,129 @@
+.section-footer{
+    display: none;
+    width: 62%;
+    color: #FFF;
+    height: 70%;
+    @include position(absolute, 0px 0 0 0);
+    z-index: 2;
+    left: 25%;
+    top: 18%;
+
+    &[data-id="0"]{
+        background: #ffc102;
+    }
+
+    &[data-id="1"]{
+        background: #c1e1da;
+    }
+
+    &[data-id="2"]{
+            background: #eea04a;
+    }
+
+    &[data-id="3"]{
+            background: #d1cf94;
+    }
+    // All
+    &[data-id="4"]{
+        background: #EC7D70;
+    }
+
+    .content{
+        width: 90%;
+        height: 100%;
+        z-index: 2;
+        padding: 0 5%;
+
+        .footer-section-content-inside{  
+            height: 80%;
+        }
+
+        h4{
+            color: #FFF;
+            font-size: 25px;
+            line-height: 35px;
+            font-weight: bold;
+            display: inline;
+            position: relative;
+            padding-bottom:5px;
+            border-bottom: 2px #FFF;
+        }
+
+        p, li{
+            color: #000;
+            margin: 10px 0 0 0;
+            font-size: 14px;
+            line-height: 16px;
+
+            span.bigger{
+                font-size: 22px;
+            }
+
+            a{
+                font-weight: bold;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &.active{
+        display: block;
+    }
+}
+
+.section-footer.mod-footer-arte{
+    
+    .categories-wrapper{
+        margin: 20px 0 0 0;
+        @include position(relative,  0 0 0 0);
+    }
+
+    .category{
+        float :left;
+        width: 45%;
+        margin:  0 20px 5% 0;
+        
+        .category-top{
+            @include clearfix;
+
+            img{
+                float: left;
+            }
+            .title{
+                text-decoration: underline;
+                margin: 0 0 0 5px;
+                float : left;
+            }
+
+            .right-text{
+                float: right;
+                p{
+                    color: #FFF;    
+                }
+                
+            }
+        }
+
+        .category-content{
+            margin: 0 0 0 70px;
+            ul{
+                margin: 10px 0;
+            }
+            li{
+                color: #000;
+
+            }
+        }
+    }
+}
+
+.section-footer-overlay{
+    z-index: 2;
+
+    &.active{
+        opacity: 0.5;
+    }
+}

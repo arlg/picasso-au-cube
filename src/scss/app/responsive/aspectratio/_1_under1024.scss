@@ -1,0 +1,39 @@
+@media screen and (max-width: 1024px) and (max-height: 730px){ 
+    
+    // /****
+    //     VIDEO
+    // ****/
+    .mod-video{
+        left: 160px;
+        top: 127px;
+    }
+
+    // /****
+    //     FOOTER
+    // ****/
+    .section-footer{
+
+        .content{
+            top: 12px;
+        }
+
+        .background .title-underline{
+            top: 77px;
+        }
+
+    }
+
+    .footer .footer-all-wrapper{
+        width: 1024px;
+    }
+
+    // /****
+    //     MODULES
+    // ****/
+    .moreinfo-layer{
+        left: 280px;
+        top: 345px;
+        width: 540px;
+    }
+
+}

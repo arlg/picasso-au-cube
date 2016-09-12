@@ -1,0 +1,15 @@
+<IfModule mod_headers.c>
+     Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
+<ifModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule !\.(js|ico|gif|jpg|png|css)$ index.php [L]
+</ifModule>
+
+AddType application/vnd.ms-fontobject .eot
+AddType font/ttf .ttf
+AddType font/otf .otf
+AddType application/x-font-woff .woff

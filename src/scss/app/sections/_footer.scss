@@ -1,0 +1,163 @@
+.footer{
+    @include size(100%, 50px);
+    @include position(fixed, 0 0 0px 0);
+    z-index: 22;
+
+    .footer-all-wrapper{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+     .footer-all-wrapper > div{
+        float: left;
+        margin: 0 1px 0 0;
+        height: 64px;
+        bottom: -14px;
+        
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+
+        @include transition-property (bottom);
+        @include transition-duration(0.2s);
+        @include transition-timing-function(ease-out);
+
+        &:last-child{
+            margin: 0;
+        }
+
+        &.active, &:hover{
+            bottom: 0px;
+            @include transition-duration(0.1s);
+            a, span{
+                @include position(relative, 10px 0 0 0);
+            }
+
+        }
+
+        .bg{
+            width: 100%;
+                
+            max-width: 100%;
+            height: 100%;
+            background-position: 50%;
+            
+            position: absolute;
+            bottom: 0;
+        }
+
+        a, span{
+            @include position(relative, 10px 0 0 0);
+            z-index:1;
+        }
+        
+        &.elem-1{
+            width: percent(279, 1274);
+            max-width: 279px;
+
+            .bg{
+                background: url("../img/footer-bg-1.png") no-repeat center top;
+                
+            }
+        }
+
+        &.elem-2{
+            width: percent(241, 1274);
+            max-width: 241px;
+
+            .bg{
+                background: url("../img/footer-bg-2.png") no-repeat center top;
+                
+            }
+        }
+
+        &.elem-3{
+            width: percent(130, 1274);
+            max-width: 130px;
+
+            .bg{
+                background: url("../img/footer-bg-3.png") no-repeat center top;
+                
+            }
+        }
+
+        &.elem-4{
+            width: percent(157, 1274);
+            max-width: 157px;
+
+            .bg{
+                background: url("../img/footer-bg-4.png") no-repeat center top;
+                
+            }
+        }
+
+        &.elem-5{
+            width: percent(101, 1274);
+            max-width: 101px;
+
+            .bg{
+                background: url("../img/footer-bg-5.png") no-repeat center top;
+                
+            }
+        }
+
+        &.elem-6, &.elem-7, &.elem-8{
+            width: percent(92, 1274);
+            max-width: 92px;
+            a,span{
+                display: block;
+                @include position(relative, 7px 0 0 0);
+            }
+            .bg{
+                background: url("../img/footer-bg-6-7-8.png") no-repeat center top;
+                
+            }
+        }
+
+        &.elem-6{
+            @include hide-text;
+            a{
+                background: url("../img/social/facebook-icon.png") no-repeat center center;
+                // @include size(18px, 29px);
+                height: 27px;
+            }
+        }
+
+        &.elem-7{
+            @include hide-text;
+            a{
+                background: url("../img/social/tw-icon.png") no-repeat center center;
+                // @include size(32px, 28px);
+                height: 28px;
+            }
+        }
+
+        &.elem-8{
+            @include hide-text;
+            a{
+                background: url("../img/social/google-icon.png") no-repeat center center;
+                // @include size(30px, 26px);
+                height: 26px;
+            }
+        }
+
+        &.elem-9{
+            width: percent(78, 1274);
+            max-width: 178px;
+
+            .bg{
+                background: url("../img/footer-bg-9.png") no-repeat center top;
+                
+            }
+
+            span{
+                background: url("../img/social/fullscreen.png") no-repeat center center;
+                height: 27px;
+                display: block;
+                top: 8px;
+            }
+        }
+
+    }
+}

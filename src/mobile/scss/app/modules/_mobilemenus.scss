@@ -1,0 +1,257 @@
+.menumain{
+    position: absolute; 
+    z-index: 3;
+}
+
+.menu-button{
+    z-index: 10;
+}
+
+/** left **/
+
+.menu-button.menu-left-button{
+    @include position(absolute, 55.9% 0 0 0px);
+    @include size(53px, 59px);
+    background: url('../../img/mobile/leftmenubutton.png');
+    background-size: 53px 59px;
+}
+
+
+/** RIGHT **/
+.menumain.menuright{
+    right: 0;
+    top: 7px;
+}
+
+.menuright-wrapper{
+    margin: 0 0 4px 0;
+    position: relative;
+    @include size(42px, 58px);
+
+    .number{
+        position: absolute;
+        z-index: 10;
+        @include size(42px, 58px);
+        background: url('../../img/mobile/button-right-menu-1.png') #FFF;
+        background-size: 42px 58px;
+    }
+
+    &.one{
+        .number{
+        
+        }
+    }
+
+    &.two{
+        .number{
+            background: url('../../img/mobile/button-right-menu-2.png') #FFF;
+            background-size: 42px 58px;
+        }   
+    }
+
+    &.three{
+        .number{
+            background: url('../../img/mobile/button-right-menu-3.png') #FFF;
+            background-size: 42px 58px;
+        }
+    }
+
+    &.four{
+        .number{
+            background: url('../../img/mobile/button-right-menu-4.png') #FFF no-repeat;
+            background-size: 42px 58px;
+            position: relative;
+            right: 7px;
+            padding: 0 7px 0 0;
+        }
+
+        span{
+            line-height: 58px !important;
+            font-weight: bold;
+        }
+    }
+
+    .inside{
+        @include clearfix();
+        display: block;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        width: 218px;
+        right: -155px;
+        text-align: right;
+        // @include transition(right 300ms ease-out);
+    
+        span{
+            display: block;
+            line-height: 14px;
+        }
+        
+        .title{
+            font-weight: bold;
+            border-bottom: 1px solid #000;
+            font-size: 18px;
+            line-height: 18px;
+            margin: 3px 0 0 0;
+        }
+    
+        a{
+            float: left;
+            width: 179px;
+            height: 58px;
+            background: #FFF;
+            font-size: 14px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .arrow{
+            background : url('../../img/mobile/button-right-arrow.png');
+            background-size: 17px 58px;
+            @include size(17px, 58px);
+            float: left;
+        }
+
+        .nextarrow{
+            background: #FFF;
+            @include size(11px, 58px);
+            float: left;
+        }
+
+        .nextlink{
+            background: #FFF;
+            @include size(10px, 58px);
+            float: left;
+        }
+    }
+
+    &.active .inside{
+        // @include transition(right 200ms ease-out);
+        right: 41px;
+    }
+
+
+}
+
+
+/** LEFT **/
+.menumain.menuleft{
+    top: 16.5625%;
+    left: 48px;
+    width: 15%;
+    display: none;
+
+    &.active{
+        display: block;
+    }
+}
+
+.menuleft-all-wrapper{
+    &.home{
+        .menuleft-element{
+            background: #ffc102;
+        }
+    }
+
+    &.module1{
+       .menuleft-element{
+            background: #b8d9b6;
+        }
+    }
+
+    &.module2{
+        .menuleft-element{
+            background: #eb6b38;
+        }
+    }
+
+    &.module3{
+        .menuleft-element{
+            background: #d2cf95;
+        }
+    }
+
+    &.allvideos{
+        .menuleft-element{
+            background: #ff3c24;
+        }
+    }
+}
+
+.menuleft-element{
+    background: black;
+    padding: 6px;
+    margin: 5px 0 0 0;
+    max-width: 63px;
+
+    span{
+        color: #FFF;    
+    }
+}
+
+.menubot.menumain{
+    bottom: 0;
+    right: 0;
+    width: 38.7323944%;
+
+    .menubot-element-social{
+        float: left;
+        margin: 0 1% 0 0;
+        height: 32px;
+        bottom: 0;
+        position: relative;
+
+        .bg{
+            width: 100%;
+            max-width: 100%;
+            height: 100%;
+            background-position: 50%;
+            position: absolute;
+            bottom: 0;
+        }
+
+        &:last-child{
+            margin: 0;
+        }
+
+        &.elem-6, &.elem-7, &.elem-8{
+            @include hide-text;
+            a,span{
+                display: block;
+                @include square(100%);
+                position: relative;
+                z-index: 10;
+            }
+        }
+
+        &.elem-6{
+            
+            width: 30%;
+
+            .bg{
+                background: url('../../img/mobile/social-mobile-fb.png');
+                background-size: cover;
+            }
+            
+        }
+
+        &.elem-7{
+            width: 35.2272727%;
+
+            .bg{
+                background: url('../../img/mobile/social-mobile-tw.png');
+                background-size: cover;
+            }
+        }
+
+        &.elem-8{
+            width: 29.090909%;
+
+            .bg{
+                background: url('../../img/mobile/social-mobile-g.png');
+                background-size: cover;
+            }
+        }
+    }
+}

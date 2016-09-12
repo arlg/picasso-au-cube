@@ -1,0 +1,91 @@
+<section class="section-main-02 section-main mod-main-module">
+    
+    <header>
+        <h2>
+            <p>{{content.module2.title}}</p>
+            <div class="background"></div>
+        </h2>
+    </header>
+
+    <video id="webcam" width="480" height="360" style="display:none;"></video>
+
+    <div class="mod-auto-wrapper">
+        
+        <div class="mod-auto-step step-home"></div>
+    
+        <div class="mod-auto-step step-picture">
+            <div class="input-field">
+                <label>{{content.module2.choose_image}}</label>
+                <input type="file" id="imageLoader" name="imageLoader" accept="image/*"/>
+            </div>
+            <p class="notsupported">{{content.module2.envoi_image|raw}}</p>
+        </div>
+
+        <div class="mod-auto-step step-facebook-01">
+    
+            <div class="mod-auto-left"></div>
+
+            <div class="mod-auto-right">
+
+                <div class="mod-auto-button-valid-gallery auto-button-orange">
+                    {{content.module2.valider}}
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="mod-auto-step step-facechange">
+            
+            <div class="mod-auto-left">
+                <div class="info-webcam">{{content.module2.acceptinvite}}</div>
+                <canvas id="canvasvideo" width="384" height="280"></canvas>
+                <div id="no_rtc" class="alert alert-error notsupported">{{content.module2.webcamnotsupported}}</div>
+                <div id="log" class="alert alert-info"></div>
+                <canvas id="offcanvas" width="384" height="280" style="display: none;position: absolute;right: 0; top : 0;width:384px;height: 280px;"></canvas>
+            </div>
+            
+        </div>
+
+
+        <div class="mod-auto-step step-end">
+            
+            <div class="mod-auto-left">
+                
+                <!-- Result picture here -->
+                <img src="" alt="" class="mod-auto-step-end-image" />
+
+            </div>
+            
+<!--
+            <div class="mod-auto-right">
+                  <div id="customBtn" class="customGPlusSignIn">
+                    <span class="icon"></span>
+                     <span class="buttonText">Google</span> 
+                  </div>
+                </div>
+-->
+
+        </div>
+        
+    </div><!-- ./mod-auto-wrapper -->
+
+    <div class="mod-auto-gallery">
+
+        <div class="gallery-container">
+
+            {% for content in contents %}
+                <div class="gallery-item">
+                    <img src="{{baseurl}}{{content}}" alt="{{content}}" />
+                </div>
+            {% endfor %}
+
+        </div>
+        
+    </div>
+
+    <div class="flat-layer">
+        <a href="/" class="home-link"></a>
+    </div>
+    
+</section>

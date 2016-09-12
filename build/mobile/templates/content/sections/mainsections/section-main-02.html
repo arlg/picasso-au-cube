@@ -1,0 +1,168 @@
+<section class="section-main-02 section-main mod-main-module">
+    
+    <header>
+        <h2>
+            <p>{{content.module2.title}}</p>
+            <div class="background"></div>
+        </h2>
+    </header>
+
+    <video id="webcam" width="480" height="360" style="display:none;"></video>
+
+    <div class="mod-auto-wrapper">
+    
+        <div class="mod-auto-step step-home">
+            <h3>{{content.module2.stephometitle_line1}} {{content.module2.stephometitle_line2}}</h3>
+            <div class="left-side">
+                <img src="{{baseurl}}img/autoportrait/intro.jpg" alt="" width="100%"/>
+            </div>
+            <div class="right-side">
+            
+                <div class="auto-button auto-step step-home button-photo">
+                    <p>{{content.module2.stephomeoption2_line1}} {{content.module2.stephomeoption2_line2}}</p>
+                </div>
+                <div class="auto-button auto-step step-home button-facebook">
+                    <p>{{content.module2.stephomeoption3_line1}} {{content.module2.stephomeoption3_line2}}</p>
+                </div>
+
+                <div class="auto-button step-home button-opengallery">
+                    <p>{{content.module2.discover_line1}}<br />{{content.module2.discover_line2}}</p>
+                </div>
+
+            </div>
+
+        </div>
+    
+        <div class="mod-auto-step step-picture">
+            <h3>{{content.module2.stephometitle_line1}} {{content.module2.stephometitle_line2}}</h3>
+
+            <div class="input-field">
+                <label>{{content.module2.choose_image}}</label>
+                <input type="file" id="imageLoader" name="imageLoader"/>
+            </div>
+            <p class="notsupported">{{content.module2.envoi_image|raw}}</p>
+
+            <div class="close-auto"></div>
+        </div>
+
+        <div class="mod-auto-step step-facebook-01">
+            <h3>{{content.module2.stephometitle_line1}} {{content.module2.stephometitle_line2}}</h3>
+
+            <div class="left-side"></div>
+
+            <div class="right-side">
+
+                <div class="mod-auto-button-valid-gallery auto-button-orange">
+                    {{content.module2.valider}}
+                </div>
+
+            </div>
+
+            <div class="close-auto"></div>
+
+        </div>
+
+        <div class="mod-auto-step step-facechange">
+            <h3>{{content.module2.stepsecondtitle}}</h3>
+            <div class="left-side">
+                <div class="info-webcam">Acceptez l'activation de votre webcam pour continuer</div>
+                <canvas id="canvasvideo" width="384" height="280"></canvas>
+                <div id="no_rtc" class="alert alert-error notsupported">
+                    Votre navigateur web ne supporte pas l'accès à la webcam. Veuillez le mettre à jour.
+                </div>
+                <div id="log" class="alert alert-info"></div>
+                <canvas id="offcanvas" width="384" height="280" style="display: none;position: absolute;right: 0; top : 0;width:384px;height: 280px;"></canvas>
+            </div>
+            
+             <div class="right-side">
+                <div class="auto-button auto-step step-facechange button-step1">
+                    <p>{{content.module2.autostep1}}</p>
+                </div>
+                <div class="auto-button auto-step step-facechange button-step2">
+                    <p>{{content.module2.autostep2}}</p>
+                </div>
+                <div class="auto-button auto-step step-facechange button-step3">
+                    <p>{{content.module2.autostep3}}</p>
+                </div>
+                <div class="auto-button button-validate auto-step step-facechange button-facechange-validate">
+                    <p>{{content.module2.validateauto_line1}}<br />{{content.module2.validateauto_line2}}</p>
+                </div>
+            </div>
+
+            <div class="close-auto"></div>
+
+        </div>
+
+
+        <div class="mod-auto-step step-end">
+            <h3>{{content.module2.partager_auto}}</h3>
+
+            <div class="left-side">
+                
+                <!-- Result picture here -->
+                <img src="" alt="" class="mod-auto-step-end-image" />
+
+            </div>
+            
+            <div class="right-side">
+                <div class="auto-button auto-step step-end">
+                    <p>{{content.module2.partager_btn}} : </p><p class="share-button auto-step step-end button-share-facebook">Facebook</p>
+                    <p class="share-button auto-step step-end button-share-twitter">Twitter</p>
+                </div>
+                <div class="auto-button auto-step step-end button-save">
+                    <p>{{content.module2.save_line1}}<br />{{content.module2.save_line2}}</p>
+                </div>
+                <div class="auto-button auto-step step-end button-addgallery">
+                    <p>{{content.module2.addgallery_line1}} <br />{{content.module2.addgallery_line2}}</p>
+                </div>
+                <div class="auto-button button-validate auto-step step-end button-end-retry">
+                    <p>{{content.module2.retry}}</p>
+                </div>
+
+            </div>
+
+            <div class="close-auto"></div>
+
+        </div>
+        
+    </div><!-- ./mod-auto-wrapper -->
+
+    <div class="mod-auto-gallery">
+        <h3>{{content.module2.gallerytitle}}</h3>
+
+        <div class="gallery-container">
+
+            {% for content in contents %}
+                <div class="gallery-item">
+                    <img src="{{baseurl}}/{{content}}" alt="{{content}}" />
+                </div>
+            {% endfor %}
+
+        </div>
+
+        <div class="close-gallery"></div>
+        
+    </div>
+
+    <div class="back-home-button"><a href="/">Home</a><div class="bg"></div></div>
+
+    <div class="more-info-intro">
+        <p> <span>{{content.module2.infoleft7}}</span></p>
+        <div class="bg"></div>
+    </div>
+
+    <div class="moreinfo-layer">
+
+            <p class="left-side">
+                {{content.module2.infoleft1}} {{content.module2.infoleft2}} {{content.module2.infoleft3}} {{content.module2.infoleft4}} {{content.module2.infoleft5}} {{content.module2.infoleft6}}
+            </p>
+
+            <div class="content">
+                <img src="{{baseurl}}img/autoportrait/info.jpg" alt="" />
+            </div>
+
+        <div class="close"></div>
+
+    </div>
+
+</section>

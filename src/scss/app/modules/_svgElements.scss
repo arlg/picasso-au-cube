@@ -1,0 +1,8 @@
+.svgelement{
+    // display: none;
+    visibility: hidden;
+    &.isvisible{
+        // display: block;
+        visibility: visible;
+    }
+}

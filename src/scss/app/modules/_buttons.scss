@@ -1,0 +1,43 @@
+.action-button{
+    .button{
+        @include square(50px);
+        border-radius: 50%;
+        
+        cursor: pointer;
+        text-align: center;
+        background: #000;        
+
+        @include transform(scale(1));
+        @include transition-property (transform, background);
+        @include transition-duration(0.2s, 0.4s);
+        @include transition-timing-function(ease-out);
+        
+        p{
+            width: 100%;
+            color: #FFF;
+            z-index: 1;
+            line-height: 50px;
+        }
+
+        &:hover{
+            background: #FFF;
+            @include transform(scale(1.1));
+            @include transition-duration(0.1s, 0.2s);
+
+            p{
+                color: #000;
+            }
+        }
+    }
+}
+
+.auto-button-orange{
+    background: #e75c25;
+    font-size: 18px;
+    cursor: pointer;
+    max-width: 110px;
+    color: #FFF;
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Picasso",
+  "version": "1.0.0",
+  "description": "ERROR: No README.md file found!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "aurelien gantier",
+  "license": "BSD",
+  "devDependencies": {
+    "grunt": "~0.4.3",
+    "grunt-contrib-jshint": "~0.9.0",
+    "grunt-contrib-sass": "~0.7.3",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-watch": "~0.6.0",
+    "grunt-notify": "~0.2.20",
+    "grunt-contrib-uglify": "~0.4.0"
+  }
+}

@@ -1,0 +1,71 @@
+@media screen and (min-width: 1200px), screen and (min-height: 775px) {
+
+    // /****
+    //     AUTOPORTRAIT
+    // ****/
+
+
+    .mod-auto-step{
+        h3{
+            font-size: 44px;
+        }
+    }
+
+    .mod-auto-wrapper .auto-button{
+        font-size: 24px;
+    }
+
+    .mod-auto-gallery{
+
+        .gallery-item{
+            width: 31%;
+            margin: 0 2% 5px 0;
+
+            &:nth-child(2n){
+                margin: 0 2% 5px 0;
+            }
+
+            &:nth-child(3n){
+                margin: 0 0 5px 0;
+            }
+        }
+    }
+
+    // /****
+    //     FOOTER
+    // ****/
+    .section-footer{
+
+        .content{
+            top: 37px;
+        }
+        .background .title-underline{
+            top: 104px;
+            padding: 0 0 0 60px;
+        }
+
+    }
+
+
+    // /****
+    //     MODULES
+    // ****/
+    .moreinfo-layer{
+        .text-under{
+            font-size: 20px;
+
+            &.smaller{
+                font-size: 17px;                
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 1270px), screen and (min-height: 775px) {
+    
+    .footer .footer-all-wrapper{
+        width: 1270px;
+    }
+
+}

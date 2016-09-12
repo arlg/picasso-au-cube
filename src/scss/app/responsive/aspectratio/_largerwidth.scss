@@ -1,0 +1,106 @@
+@media screen and (min-aspect-ratio: 1368/868) { 
+
+    /****
+        AUTOPORTRAIT
+    ****/
+
+    .mod-auto-wrapper{
+        left: 18.5%;
+        top: 15vw;
+        width: 33vw;
+    }
+
+    .mod-auto-gallery{
+        left: 22%;
+        top: 12vw;
+        width: 51vw;
+        height: 27vw;  
+    }
+
+    .mod-auto-step{
+        h3{
+            font-size: 44px;
+        }
+    }
+
+    .mod-auto-wrapper .auto-button{
+        font-size: 24px;
+    }
+
+
+    /****
+        VIDEO
+    ****/
+    .mod-video{
+        left: 17.4vw;
+        top: 15.5vh;
+        padding-bottom: 60vh;
+        width: 60% !important;
+    }
+
+    /****
+        FOOTER
+    ****/
+    .section-footer .content{
+        top: 26px;
+    }
+
+    /****
+        MODULES
+    ****/
+
+    .video-play-button{
+        left: 50%;
+        top: 24vw;
+    }
+
+    .moreinfo-layer{
+        left: 27vw;
+        top: 33vw;
+        width: 52vw;
+    }
+
+
+    /****
+        NORATIO
+    ****/
+    .no-ratio{
+
+        .mod-auto-wrapper{
+            left: 24%;
+            top: 13vw;
+            width: 26vw;
+        }
+
+        .mod-auto-gallery{
+            left: 24%;
+            top: 14vw;
+            width: 47vw;
+            height: 25vw;
+        }
+
+        .mod-video{
+            left: 23.4vw;
+            top: 19.5vh;
+            padding-bottom: 54vh;
+            width: 50% !important;
+        }
+
+        /****
+        MODULES
+        ****/
+
+        .video-play-button{
+            left: 50%;
+            top: 24vw;
+        }
+
+        .moreinfo-layer{
+            left: 27vw;
+            top:50vh;
+            width: 47vw;
+        }
+
+    }
+    
+}

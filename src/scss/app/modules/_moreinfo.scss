@@ -1,0 +1,45 @@
+.moreinfo-layer{
+    position: absolute;
+    display: none;
+
+    &.active{
+        display: block;
+    }
+
+    .text-under{
+        color: #FFF;
+        margin: 0;
+        display: none;
+
+        &.active{
+            display: block;
+        }
+        
+        .title{
+            font-size: 1em;
+            text-decoration: underline;
+            margin: 0 0 0.5em 0;
+        }
+
+        p{
+            font-size: 0.82em;
+            line-height: 1.16em;
+            letter-spacing: 0.04em;
+        }
+    }
+
+    p.text-left{
+        color: #FFF;
+        font-size: 18px;
+        width: 12%;
+        float: left;
+        text-align: right;
+        margin: 0 3% 0 0;
+
+        &.bigger{
+            font-size: 32px;
+            line-height: 40px;
+            width: 20%;
+        }
+    }
+}

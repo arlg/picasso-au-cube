@@ -1,0 +1,7 @@
+.section-mainpage{
+    display :none;
+
+    &.active{
+        display: block;
+    }
+}

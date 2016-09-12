@@ -1,0 +1,44 @@
+<section class="section-main-01 section-main mod-main-module">
+
+    <div class="flat-layer">
+
+        <a href="/{{common.link_module4}}" class="see-all-button"></a>
+
+        <a href="/" class="home-link"></a>
+
+    </div>
+
+    <div class="interactive-layer">
+        
+        <div class="video-play-button">
+            <img src="{{baseurl}}img/play-button.png" alt="Play video" width="41" height="47" />
+        </div>
+
+        <header>
+            <h2>
+                <p>{{content.module1.title}} &nbsp;</p><div class="background"></div>
+            </h2>
+            <div class="list-wrapper">
+                <ul>
+                    {% for item in content.module1.list %}
+
+                        <li data-youtubeid="{{ item.id }}">{{ item.name }}</li>
+                        
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="action-button button-relaunch">
+                
+                <div class="button">
+                    <p>{{common.relaunch}}</p>
+                    <div></div>
+                </div>
+                
+            </div>
+            
+        </header>
+        
+    </div>
+
+</section>

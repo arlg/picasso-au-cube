@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="-343 0 1368 768" enable-background="new -343 0 1368 768" xml:space="preserve" preserveAspectRatio="xMinYMin slice">
+<style type="text/css">
+<![CDATA[
+    
+
+    @-moz-keyframes myfirst
+    {
+        0%   {fill:#fff8b4;}
+        60%  {fill:#ffc600;}
+        100%   {fill:#fff8b4;}
+    }
+         
+    @-webkit-keyframes myfirst
+    {
+        0%   {fill:#fff8b4;}
+        60%  {fill:#ffc600;}
+        100%   {fill:#fff8b4;}
+    }
+
+    @keyframes myfirst
+    {
+        0%   {fill:#fff8b4;}
+        60%  {fill:#ffc600;}
+        100%   {fill:#fff8b4;}
+    }
+
+
+    /**********
+        HOME 
+    ***********/
+
+    .mainpage-link-special{
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    .mainpage-link-boutique{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .mainpage-choose-button{
+        font-size: 40px;
+        text-transform:uppercase;
+        pointer-events:none;
+    }
+
+    .mainpage-choose-button.ishover{
+        font-weight: bold;
+    }
+
+    #poly-25.ishome{
+        fill:#fcef78;
+        animation:myfirst 3.4s;
+        -moz-animation:myfirst 3.4s infinite; /* Firefox */
+        -webkit-animation:myfirst 3.4s infinite; /* Safari and Chrome */
+    }
+    
+
+    .mainpage-validate-button{
+        cursor: pointer;
+    }
+
+     .mainpage-link-special, .mainpage-link-boutique{
+        pointer-events: none;
+    }
+
+    .mainpage-validate-button circle{
+        fill : #000000;
+
+    }
+
+    .mainpage-validate-button:hover circle{
+        fill: #FFFFFF;
+        
+    }
+
+    .mainpage-validate-button text{
+        fill: #FFFFFF;
+        pointer-events: none;
+        font-size: 20px;
+
+        -webkit-transition: fill 0.3s ease-out;
+        transition: fill 0.3s ease-out;
+    }
+    
+    .mainpage-validate-button:hover text{
+        fill: #000000;
+    }
+
+    .mainpage-selector-item{
+        fill: #000000;
+        font-size: 24px;
+        opacity: 0;
+        
+        -webkit-transition: opacity 0.3s ease-out, -webkit-transform 0.3s ease-out;
+        transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+
+        -webkit-transform: translate3d(0px, 10px, 0px);
+        -moz-transform: translate3d(0px, 10px, 0px);
+        -ms-transform: translate3d(0px, 10px, 0px);
+        -o-transform: translate3d(0px, 10px, 0px);
+        transform: translate3d(0px, 10px, 0px);
+    }
+
+    .mainpage-selector-item.active{
+        opacity: 1;
+
+        -webkit-transform: translate3d(0px, 0px, 0px);
+        -moz-transform: translate3d(0px, 0px, 0px);
+        -ms-transform: translate3d(0px, 0px, 0px);
+        -o-transform: translate3d(0px, 0px, 0px);
+        transform: translate3d(0px, 0px, 0px);
+    }
+
+    .mainpage-selector-item text{
+        font-size: 0.76em;
+        font-weight: bold;
+    }
+
+    .mainpage-selector-item text.title{
+        font-weight: bold;
+        font-size: 1em;
+    }
+
+    .mainpage-number{
+        opacity: 0;
+        -webkit-transition: opacity 0.4s ease-out;
+        transition: opacity 0.4s ease-out;
+    }
+    .mainpage-number.active{
+        opacity: 1;
+    }
+
+    /***
+        HOME ANIMATION
+    ****/
+
+    .mainpage-link-special, .mainpage-subtitle, .mainpage-validate-button, .mainpage-number, .mainpage-choose-button{
+        opacity: 0;
+
+        -webkit-transition: opacity 0.4s ease-out;
+        transition: opacity 0.4s ease-out;
+    }
+
+    .mainpage-link-special.isvisible, .mainpage-subtitle.isvisible, .mainpage-validate-button.isvisible, .mainpage-number.isvisible, .mainpage-choose-button.isvisible{
+        opacity: 1;
+    }
+
+    
+    /**********
+        MODULES 
+    ***********/
+    .info-left{
+        fill: #FFF;
+        font-size: 17px;
+        pointer-events : none;
+        opacity: 1;
+    }
+
+    .info-left.inactive{
+        opacity: 0;
+    }
+
+    .info-left .bigger{
+        font-size: 22px;
+    }
+
+    .see-all-button{
+        font-weight: bold;
+        font-size: 30px;
+        fill: #000;
+        pointer-events:none;
+    }
+
+    .home-link{
+        pointer-events:none;
+    }
+
+    .info-right{
+        font-size: 32px;
+        font-weight: bold;
+        pointer-events:none;
+    }
+
+
+    /*********
+        SEE MORE
+    **********/
+    .close-info-layer{
+        cursor: pointer;
+    }
+
+    .close-info-layer rect{
+        opacity: 0;
+    }
+    
+    .info-layer-content{
+        display: none;
+    }
+
+    .info-layer-content.active{
+        display: block;
+    }
+
+    .info-layer-left-text{
+        fill: #FFFFFF;
+        font-size: 24px;
+    }
+
+    .info-layer-left-text.module3{
+        font-size: 35px;
+    }
+
+    .info-layer-module-image{
+        display: none;
+    }
+
+    .info-layer-module-image.active{
+        display: block;
+    }
+
+    /****
+        AUTO
+    ****/
+    .close-auto, .close-gallery{
+        cursor: pointer;
+        display: none;
+        position:relative;
+        z-index: 0;
+    }
+
+    .close-auto.active, .close-gallery.active{
+        display: block;
+        z-index: 10;    
+    }
+
+    .auto-step{
+        display: none;
+    }
+
+    .auto-step.active{
+        display: block;
+    }
+
+    .auto-title{
+        font-weight: bold;
+        font-size: 44px;
+    }
+
+    .auto-button{
+        fill: #e75c25;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .auto-button:hover, .auto-button.current{
+        font-size: 28px;
+    }
+
+    .auto-button.button-validate text{
+        fill: #FFFFFF;
+        font-size: 20px;
+    }
+
+    .auto-button.button-validate:hover text{
+        font-size: 20px;
+    }
+
+    
+    .share-button{
+        cursor: pointer;
+        -webkit-transform: scale(1);
+        -webkit-transform-origin: center center;
+    }
+    
+    .share-button:hover{
+        -webkit-transform: scale(1.04);
+        -webkit-transform-origin: center center;
+    }
+
+    .share-button rect{
+        fill: #e75c25;
+    }
+
+    .rect-sizer{
+        display: none;
+    }
+
+    .rect-sizer.active{
+        display: block;
+    }
+
+]]>
+</style>
+<g id="Layer_1_1_">
+    <g id="background">
+
+        <g id="outside">
+            <path fill="#FFFFFF" d="M-292.456,714.185L-216.45 801.45 -219.883 928.884 -293.334 840.286 z"/>
+            <path fill="#FFFFFF" d="M-286.5,-163.5L-295.647 -6.668 -485.618 -9.117 -562.5 -126.5 z"/>
+            <path fill="#FFFFFF" d="M-358.838,258.99L-472.497 453.665 -416.318 500.633 -346.649 477.93 z"/>
+            <path fill="#FFFFFF" d="M-421.952,190.152L-359.997 252.765 -473.632 448.417 -558.5 297.318 z"/>
+            <path fill="#FFFFFF" d="M-472.665,458.665L-420.467 501.916 -371.711 645.524 -443.605 592.775 z"/>
+            <path fill="#FFFFFF" d="M-487.098,-2.068L-399.007 105.229 -547.983 200.357 -580.051 88.5 z"/>
+            <path fill="#FFFFFF" d="M277.548,864.801L587.217 870.084 672.5 978.978 219.663 897.008 z"/>
+            <path fill="#FFFFFF" d="M994.232,18.365L1028.337 373.93 1117.219 318.095 1089.349 46.095 z"/>
+            <path fill="#FFFFFF" d="M-58.36,781.135L20.85 853.991 7 916 -84.518 853.5 z"/>
+            <path fill="#FFFFFF" d="M239.5,775.5L163.896 864.82 130.658 973.981 213.849 897.933 z"/>
+            <path fill="#FFFFFF" d="M10.365,917.5L24.729 855.836 160.174 868.031 128.97 972.529 z"/>
+            <path fill="#FFFFFF" d="M715.212,815.594L679.345 978.879 739 922.5 z"/>
+            <path fill="#FFFFFF" d="M651.5,-9L711.627 18.543 832.912 -27.698 732.5 -59.5 z"/>
+            <path fill="#FFFFFF" d="M736.051,-61.698L837.35 -29.481 946.623 -49.622 857.166 -84.166 z"/>
+            <path fill="#FFFFFF" d="M426.499,-79.215L544.541 -79.056 487.419 -0.851 371 -4 z"/>
+            <path fill="#FFFFFF" d="M230.121,-101.539L250.517 -0.851 361.851 -6.5 336.5 -106.996 z"/>
+            <path fill="#FFFFFF" d="M-44.014,-133.111L8.998 -107.94 -29.098 -2.387 -72.935 -34.474 z"/>
+            <path fill="#FFFFFF" d="M-290.837,-7.851L-279.597 -160.365 -118.458 -105.073 -115.5 -4.5 z"/>
+            <path fill="#FFFFFF" d="M-111.5,-7.5L-114.652 -107.118 -48.5 -138.073 -77.227 -31.85 z"/>
+            <path fill="#FFFFFF" d="M717.833,815.594L804.5 891.167 825.233 978.978 743.167 921.889 z"/>
+            <path fill="#FFFFFF" d="M808.034,889.633L953.35 902.317 972.346 1000.5 828.5 978.978 z"/>
+            <path fill="#FFFFFF" d="M978.501,687.449L1003.834 584.966 1069.5 597.833 1064.501 706.584 z"/>
+            <path fill="#FFFFFF" d="M974.499,1000.5L955.899 899.768 1033.833 967.834 1043.533 1053.834 z"/>
+            <path fill="#FFFFFF" d="M1027.75,378.586L1121.166 320.5 1210.499 355.004 1119.772 418.716 z"/>
+            <path fill="#FFFFFF" d="M1120.258,316.952L1210.499 351.167 1181.833 115.967 1093.166 46.869 z"/>
+            <path fill="#FFFFFF" d="M1093.166,42.989L1181.166 110.177 1137.322 33.447 1051.166 -25.5 z"/>
+            <path fill="#FFFFFF" d="M366.316,-3.979L422.67 -80.63 394.777 -169.433 339.635 -108.131 z"/>
+            <path fill="#FFFFFF" d="M547.72,2.052L645.166 -9.103 657.833 -86.706 551.833 -79.215 z"/>
+            <path fill="#FFFFFF" d="M647.922,-10.379L733.367 -63.216 736.536 -166.828 660.951 -86.706 z"/>
+            <path fill="#FFFFFF" d="M736.536,-65.332L857.45 -88.036 869.167 -181.5 739.371 -166.828 z"/>
+            <path fill="#FFFFFF" d="M859.569,-86.051L969.834 -79.215 1047.834 -29.048 952.986 -51.5 z"/>
+            <path fill="#FFFFFF" d="M658.969,-89.452L732.319 -166.828 611.423 -152.832 550.269 -83.315 z"/>
+            <path fill="#FFFFFF" d="M425.749,-82.464L546.021 -82.464 607.566 -153.576 398.501 -170.568 z"/>
+            <path fill="#FFFFFF" d="M198.118,-3.42L224.27 -101.539 11.835 -106.996 -26.003 -1.5 z"/>
+            <path fill="#FFFFFF" d="M337.081,-108.945L394.218 -172.647 252.501 -169.433 228.326 -105.792 z"/>
+            <path fill="#FFFFFF" d="M224.553,-105.578L248.716 -169.149 50.805 -170.568 12.785 -109.882 z"/>
+            <path fill="#FFFFFF" d="M-433.5,110.899"/>
+            <path fill="#FFFFFF" d="M-424.219,185.334L-398.556 108.451 -545.997 204.34 -559.348 293.994 z"/>
+            <path fill="#FFFFFF" d="M134.666,975.951L214.559 901.751 369.5 1030.5 265.573 1117.5 z"/>
+            <path fill="#FFFFFF" d="M217.579,899.097L675.335 983.665 717.833 1088.5 372.335 1024.83 z"/>
+            <path fill="#FFFFFF" d="M-370.295,650.058L-444.5 598.645 -462.083 694.816 -374.546 716.484 z"/>
+            <path fill="#FFFFFF" d="M-582.034,84.887L-488.818 -5.275 -564.483 -120.014 -641.814 -28.764 z"/>
+            <path fill="#FFFFFF" d="M-477.393,457.133L-605.5 524.5 -558.5 630.087 -449.216 592.775 z"/>
+            <path fill="#FFFFFF" d="M-476.542,451.189L-562.932 299.811 -687.5 285.175 -630.5 429.716 z"/>
+            <path fill="#FFFFFF" d="M-448.365,594.394L-465.216 694.485 -588.5 747.26 -558.5 636.087 z"/>
+            <path fill="#FFFFFF" d="M-375.081,719.801L-461.797 697.988 -585.665 750.095 -488.253 787.148 z"/>
+            <path fill="#FFFFFF" d="M-478.526,452.888L-631.5 434.3 -789.5 496.5 -607.665 518.665 z"/>
+            <path fill="#FFFFFF" d="M-372.528,721.783L-298.665 840.984 -424.996 904.665 -485.419 789.983 z"/>
+            <path fill="#FFFFFF" d="M-216.45,928.884L-210.5 803.76 -89.052 855.948 -80.549 973.966 z"/>
+            <path fill="#FFFFFF" d="M-562.5,293.994L-550.5 200.371 -582.021 91.5 -615.334 202.584 z"/>
+            <path fill="#FFFFFF" d="M-584.572,88.57L-618.5 200.357 -740.531 119.646 -644.649 -23.095 z"/>
+            <path fill="#FFFFFF" d="M-565.334,296.829L-619.5 205.418 -744.5 123.332 -687.5 279.5 z"/>
+            <path fill="#FFFFFF" d="M1073.916,596.482L1164.481 547.005 1198.5 668.5 1069.5 706.584 z"/>
+            <path fill="#FFFFFF" d="M1072.985,591.901L1121.96 422.152 1210.499 359.167 1164.481 542.339 z"/>
+            <path fill="#FFFFFF" d="M1069.5,710.743L1197.651 674.95 1165.167 914.501 1039.167 964.803 z"/>
+            <path fill="#FFFFFF" d="M1036.332,968.332L1049.203 1054.837 1165.167 1135.167 1157.834 1029.167 z"/>
+            <path fill="#FFFFFF" d="M1039.282,966.913L1165.167 916.501 1284.5 949.834 1159.253 1024.913 z"/>
+            <path fill="#FFFFFF" d="M859.665,-88.949L970.5 -82.464 1089.367 -186.167 873.167 -181.5 z"/>
+            <path fill="#FFFFFF" d="M973.382-81.765c0,0,73.515,51.383,75.516,48.717s126.936-123.785,126.936-123.785l-84.197-28.482L973.382-81.765z"/>
+            <path fill="#FFFFFF" d="M1052.04,-28.062L1241.167 -109.132 1351.833 -47.595 1138.592 30.351 z"/>
+            <path fill="#FFFFFF" d="M1141.459,34.4L1352.974 35.535 1404.359 128.599 1185.55 110.744 z"/>
+            <path fill="#FFFFFF" d="M1181.833,115.967"/>
+            <path fill="#FFFFFF" d="M1186.033,115.4L1408.5 132.5 1457.833 373.93 1214.417 351.167 z"/>
+            <path fill="#FFFFFF" d="M1143.099,31.747L1354.5 -46.162 1503.833 -32.948 1352.966 32.315 z"/>
+            <path fill="#FFFFFF" d="M1212.912,357.181L1251.826 497.658 1201.335 664.331 1167.833 545.928 z"/>
+            <path fill="#FFFFFF" d="M1214.6,354.8L1255.166 494.5 1489.833 528.5 1457.833 378.883 z"/>
+            <path fill="#FFFFFF" d="M1167.833,913.718L1284.5 945.066 1299.166 811.5 1201.166 674.95 z"/>
+            <path fill="#FFFFFF" d="M1203.166,668.499L1419.166 678.499 1489.833 533.833 1255.166 499.166 z"/>
+            <path fill="#FFFFFF" d="M1204.302,673.817l216.864,7.714L1522.5,810.008c0,0-214.283-2.342-218.95-0.85S1204.302,673.817,1204.302,673.817z"/>
+            <path fill="#FFFFFF" d="M-422.188,908.501c1.355-0.667,126.915-64.667,126.915-64.667l74.44,90.667l-55.06,110.666L-422.188,908.501z"/>
+            <path fill="#FFFFFF" d="M-270.833,1045.167L-216.45 934.501 -80.833 978.978 -65.5 1137.167 z"/>
+            <path fill="#FFFFFF" d="M-85.767,857.255L-76.286 974.249 20.85 1079.167 6.5 919.054 z"/>
+            <path fill="#FFFFFF" d="M-77.351,979.323L20.85 1083.834 28.5 1267.167 -61.928 1140.002 z"/>
+            <path fill="#FFFFFF" d="M10.365,921.889L131.226 977.746 260.631 1117.5 25.167 1079.167 z"/>
+            <path fill="#FFFFFF" d="M1050.338,-31.814L1242.5 -112.834 1326.5 -190.167 1181.166 -157.5 z"/>
+        </g>
+        
+        <g id="inside">
+
+            <path fill="#FFFFFF" id="poly-70" d="M-61.484,780.691l-230.367-70.814l80.819,90.773l122.697,51.717L-61.484,780.691z"/>
+            <path fill="#FFFFFF" id="poly-69" d="M279.475,751.229L585.097,645.54L584.5,866.5l-303-5L279.475,751.229z"/>
+            <path fill="#FFFFFF" id="poly-68" d="M276.306,748.101l-13.368-68.771l-44.005,215.637l58.551-33.334L276.306,748.101z"/>
+            <path fill="#FFFFFF" id="poly-67" d="M161.548,862.059l-38.413-120.497l137.496-61.64l-20.857,89.731L161.548,862.059z"/>
+            <path fill="#FFFFFF" id="poly-66" d="M156.486,863.783L24.085,752.525l-78.87,25.2l78.517,73.67L156.486,863.783z"/>
+            <path fill="#FFFFFF" id="poly-64" d="M-295.273,707.315l-0.896,129.853l-74.182-115.79l4.592-69.9L-295.273,707.315z"/>
+            <path fill="#FFFFFF" id="poly-63" d="M976.764,692.99l-18.815,205.345l77.219,66.469l29.334-251.509L976.764,692.99z"/>
+            <path fill="#FFFFFF" id="poly-62" d="M808.5,885.965l-42.597-197.647l206.442,4.539L953.5,897.965L808.5,885.965z"/>
+            <path fill="#FFFFFF" id="poly-61" d="M711.004,708.534l51.903-20.217L804.5,888.5l-86.662-75.968L711.004,708.534z"/>
+            <path fill="#FFFFFF" id="poly-60" d="M591.441,868.574l41.462-171.254l78.951,117.18l-34.76,164.479L591.441,868.574z"/>
+            <path fill="#FFFFFF" id="poly-59" d="M265.573,678.286l291.379-125.224l26.944,89.019L279.359,747.26L265.573,678.286z"/>
+            <path fill="#FFFFFF" id="poly-58" d="M569.859,457.416L299.218,569.332L263.933,675.8l292.292-126.744L569.859,457.416z"/>
+            <path fill="#FFFFFF" id="poly-57" d="M95.941,534.506L-26.796,599.54l149.165,138.128l136.6-60.379L95.941,534.506z"/>
+            <path fill="#FFFFFF" id="poly-56" d="M-29.431,600.914l148.595,139.811l39.039,121.174l-110.16-92.551L25.026,749.32L-29.431,600.914z"/>
+            <path fill="#FFFFFF" id="poly-55" d="M-32.37,603.09l53.271,146.414l-78.974,25.7l-35.286-112.999L-32.37,603.09z"/>
+            <path fill="#FFFFFF" id="poly-54" d="M-61.928,775.204l-34.443-112.083l-145.745-20.271l-50.276,63.612L-61.928,775.204z"/>
+            <path fill="#FFFFFF" id="poly-53" d="M-246.488,642.008l-48.367,61.937L-367.5,645.54l-47-136.585L-246.488,642.008z"/>
+            <path fill="#FFFFFF" id="poly-52" d="M1069.217,591.948l-62.652-11.875l21.94-197.493l88.715,39.254L1069.217,591.948z"/>
+            <path fill="#FFFFFF" id="poly-51" d="M1001.452,579.409l-176.22-38.104l12.979-111.413l186.157-48.128L1001.452,579.409z"/>
+            <path fill="#FFFFFF" id="poly-50" d="M766.756,683.729l56.907-137.8l176.067,39.079l-26.864,102.811L766.756,683.729z"/>
+            <path fill="#FFFFFF" id="poly-49" d="M617.762,559.167l93.242,146.284l49.583-21.26L674.02,557.554L617.762,559.167z"/>
+            <path fill="#FFFFFF" id="poly-48" d="M615.455,560l19.4,133.857L714.5,811.5l-7.696-106.046L615.455,560z"/>
+            <path fill="#FFFFFF" id="poly-47" d="M612.286,560.089l17.758,133.166L588.191,866.5V646.051L612.286,560.089z"/>
+            <path fill="#FFFFFF" id="poly-46" d="M572.151,458.064l-12.868,91.832l27.305,90.614l24.175-83.946L572.151,458.064z"/>
+            <path fill="#FFFFFF" id="poly-45" d="M359.863,369.302L569.9,453.699L298.913,564.521L122.367,432.77L359.863,369.302z"/>
+            <path fill="#FFFFFF" id="poly-44" d="M260.305,674.962l35.287-107.972L119.199,434.3l-20.929,97.149L260.305,674.962z"/>
+            <path fill="#FFFFFF" id="poly-43" d="M116.067,433.65l-21.61,96.12l-121.822,65.84l18.177-83.559L116.067,433.65z"/>
+            <path fill="#FFFFFF" id="poly-42" d="M-31.223,597.287l-63.659,60.948l21.536-83.229l60.799-61.87L-31.223,597.287z"/>
+            <path fill="#FFFFFF" id="poly-41" d="M-15.376,511.723l-140.757-23.709l-117.471,60.438l198.844,21.35L-15.376,511.723z"/>
+            <path fill="#FFFFFF" id="poly-40" d="M-97.899,658.945l21.613-85.254l-199.606-22.575l35.286,88.796L-97.899,658.945z"/>
+            <path fill="#FFFFFF" id="poly-39" d="M-342.812,561.847l98.004,77.642l-35.028-89.672l-62.854-68.854L-414.5,504.5L-342.812,561.847z"/>
+            <path fill="#FFFFFF" id="poly-38" d="M761.695,306.233l169.921-60.172l88.562,130.631l-182.455,48.335L761.695,306.233z"/>
+            <path fill="#FFFFFF" id="poly-37" d="M700.922,406.77l56.998-98.661l76.125,121.236l-14.138,111.953L700.922,406.77z"/>
+            <path fill="#FFFFFF" id="poly-36" d="M699.321,410.326l-22.371,144.418l87.214,126.787l54.851-135.738L699.321,410.326z"/>
+            <path fill="#FFFFFF" id="poly-35" d="M573.524,455.506l41.247,100.115l58.404-1.291l21.9-144.004L573.524,455.506z"/>
+            <path fill="#FFFFFF" id="poly-34" d="M362.842,366.171l-1.528-182.884l209.346,43.663v222.823L362.842,366.171z"/>
+            <path fill="#FFFFFF" id="poly-33" d="M358.395,365.483l-0.898-181.509l-245.555,14.625l6.378,231.116L358.395,365.483z"/>
+            <path fill="#FFFFFF" id="poly-32" d="M115.305,430.555l-6.339-230.185L-13.695,310.604l3.055,197.554L115.305,430.555z"/>
+            <path fill="#FFFFFF" id="poly-31" d="M104.763,197.432L-16.216,307.265l-149.771-20.619l107.915-103.8L104.763,197.432z"/>
+            <path fill="#FFFFFF" id="poly-30" d="M-166.75,290.297l150,19.379l2.253,199.279l-140.835-23.577L-166.75,290.297z"/>
+            <path fill="#FFFFFF" id="poly-29" d="M-275.361,546.348l116.371-60.265l-10.302-196.626l-121.421,44.771L-275.361,546.348z"/>
+            <path fill="#FFFFFF" id="poly-28" d="M-171.523,286.493L-288.27,216.13L-354.5,253.5l61.526,78.265L-171.523,286.493z"/>
+            <path fill="#FFFFFF" id="poly-27" d="M-343.098,475.614l64.563,70.124l-16.382-211.947l-61.232-75.562L-343.098,475.614z"/>
+            <path fill="#FFFFFF" id="poly-26" d="M1023.717,373.844l-91.469-133.951l-9.341-132.815l67.149-88.995L1023.717,373.844z"/>
+            <path fill="#FFFFFF" id="poly-25" d="M759.921,302.645l168.608-61.792l-8.794-132.662L759.079,147.58L759.921,302.645z"/>
+            <path fill="#FFFFFF" id="poly-24" d="M698.212,403.599l58.503-99.69l-0.843-157.347l-57.015-18.53L698.212,403.599z"/>
+            <path fill="#FFFFFF" id="poly-23" d="M575.32,227.474l121.285-97.231l-2.329,276.446L573.64,451.454L575.32,227.474z"/>
+            <path fill="#FFFFFF" id="poly-22" d="M361.162,180.157l212.708,43.382l121.896-97.113L466.863,69.137L361.162,180.157z"/>
+            <path fill="#FFFFFF" id="poly-21" d="M357.708,177.865L462.202,67.649l-104.86-29.514l-120.981,69.96L357.708,177.865z"/>
+            <path fill="#FFFFFF" id="poly-20" d="M353.581,180.157l-122.757-70.095l-236.081-2.406l119.759,86.57L353.581,180.157z"/>
+            <path fill="#FFFFFF" id="poly-19" d="M108.24,194.86l-164.745-16.154l-99.521-71.127h144.467L108.24,194.86z"/>
+            <path fill="#FFFFFF" id="poly-18" d="M-61.086,179.674l-107.152,105.501L-284.221,213.8l125.906-103.93L-61.086,179.674z"/>
+            <path fill="#FFFFFF" id="poly-17" d="M-356.403,250.215l64.964-35.941l-104.76-102.807l-23.302,75.07L-356.403,250.215z"/>
+            <path fill="#FFFFFF" id="poly-15" d="M991.824,14.939l97.543,28.049l-42.469-69.518l-94.196-21.066L991.824,14.939z"/>
+            <path fill="#FFFFFF" id="poly-14" d="M921.422,102.921l66.828-87.239L949-46.162L839.209-26.29L921.422,102.921z"/>
+            <path fill="#FFFFFF" id="poly-13" d="M759.809,142.428L713.61,21.948L835.5-25.5l81.719,130.14L759.809,142.428z"/>
+            <path fill="#FFFFFF" id="poly-11" d="M700.576,124.097L648.489-7.1l62.517,29.271l44.029,120.258L700.576,124.097z"/>
+            <path fill="#FFFFFF" id="poly-10" d="M468.312,66.085l79.339-60.081l97.604-11.723l50.63,129.051L468.312,66.085z"/>
+            <path fill="#FFFFFF" id="poly-9" d="M463.615,64.404l28.387-64.933l56.001-78.686L543.723,4.5L463.615,64.404z"/>
+            <path fill="#FFFFFF" id="poly-8" d="M360.038,35.041l100.484,27.071l26.48-59.834L368.531-0.887L360.038,35.041z"/>
+            <path fill="#FFFFFF" id="poly-7" d="M232.391,105.442L251.102,2.278L363.135-3.42l-7.834,38.424L232.391,105.442z"/>
+            <path fill="#FFFFFF" id="poly-6" d="M228.303,104.509L247.298,3.981l-20.674-105.52L201.242,0.567L228.303,104.509z"/>
+            <path fill="#FFFFFF" id="poly-5" d="M-6.098,102.919L-26.003,2.28l223.794-1.571l27.267,105.571L-6.098,102.919z"/>
+            <path fill="#FFFFFF" id="poly-4" d="M-9.915,102.521L-29.405,2.28l-45.591-31.554l-36.819,28.664L-9.915,102.521z"/>
+            <path fill="#FFFFFF" id="poly-3" d="M-13.429,103.647L-117.408-0.931l-173.306-1.966l133.471,106.583L-13.429,103.647z"/>
+            <path fill="#FFFFFF" id="poly-2" d="M-288.231,212.594l127.508-107.27L-292.862-0.331L-394.5,107.5L-288.231,212.594z"/>
+            <path fill="#FFFFFF" id="poly-1" d="M-396.705,104.254L-295.113-1.832L-484.5-5.5L-396.705,104.254z"/>
+            
+        </g>
+    
+    </g>
+    <g id="allvideos" display="none">
+        <polygon fill="#F3AB9A"  points="1006.5,-90.5 1050.5,30.5 1130.5,-118.5         "/>
+        <polygon fill="#F3AB9A"  points="1136.5,-112.5 1053.5,41.5 1049.5,255.5 1164.5,86.5         
+            "/>
+        <polygon fill="#F3AB9A"  points="1051.5,269.5 1168.5,95.5 1175.5,340.5 1058.5,407.5 
+            1051.5,408.5        "/>
+        <polygon fill="#F3AB9A"  points="1060.5,417.5 1030.5,549.5 1171.5,465.5         "/>
+        <polygon fill="#F3AB9A"  points="1064.5,412.5 1226.5,317.5 1191.5,466.5         "/>
+        <polygon fill="#F3AB9A"  points="1031.5,554.5 1177.5,472.5 1236.5,498.5 1016.5,629.5        
+            "/>
+        <polygon fill="#F3AB9A"  points="1016.5,636.5 1011.5,664.5 1268.5,630.5 1235.5,507.5        
+            "/>
+        <polygon fill="#F3AB9A"  points="1027.5,718.5 1145.5,659.5 1264.5,646.5 1118.5,892.5 
+            1027.5,915.5        "/>
+        <polygon fill="#F3AB9A"  points="1175.5,102.5 1181.5,333.5 1257.5,287.5         "/>
+        <polygon fill="#F3AB9A"  points="1142.5,-108.5 1161.5,4.5 1243.5,-80.5      "/>
+        <polygon fill="#F3AB9A"  points="1162.5,11.5 1173.5,86.5 1251.5,74.5        "/>
+        <polygon fill="#F3AB9A"  points="1173.5,2.5 1285.5,-88.5 1263.5,70.5        "/>
+        <polygon fill="#F3AB9A"  points="1177.5,95.5 1261.5,275.5 1291.5,77.5       "/>
+        <polygon fill="#F3AB9A"  points="1237.5,312.5 1198.5,466.5 1266.5,496.5         "/>
+        <polygon fill="#F3AB9A"  points="1240.5,507.5 1274.5,625.5 1282.5,502.5         "/>
+        <polygon fill="#F3AB9A"  points="-443.833,-57.5 -386.833,65.833 -515.833,77.167         "/>
+        <polygon fill="#F3AB9A"  points="-394.167,183.833 -346.833,240.167 -345.5,406.167 
+            -449.833,203.833        "/>
+        <polygon fill="#F3AB9A"  points="-402,182 -518,84 -507.5,216.5      "/>
+        <polygon fill="#F3AB9A"  points="-501.5,219 -453,205 -351.5,404.5 -396.5,433        "/>
+        <polygon fill="#F3AB9A"  points="-349.5,407 -392.5,437 -345.5,485       "/>
+        <polygon fill="#F3AB9A"  points="-395,440.5 -467.5,514 -347.5,486.5         "/>
+        <polygon fill="#F3AB9A"  points="-344.5,490.5 -465,520.5 -398,660       "/>
+        <polygon fill="#F3AB9A"  points="-467.5,523 -402.5,660 -473,689.5       "/>
+        <polygon fill="#F3AB9A"  points="-472,697 -386.5,708 -348.5,765         "/>
+        <polygon fill="#F3AB9A"  points="-209,781 -334.5,770 -212,904.5 -205,781.5      "/>
+        <polygon fill="#F3AB9A"  points="-354.5,767 -470.5,703.5 -450.5,832.5       "/>
+        <polygon fill="#F3AB9A"  points="-346,768.5 -274.5,842.5 -443,835 -348.5,768        "/>
+        <polygon fill="#F3AB9A"  points="-272.5,848 -216.5,906 -481.5,913.5 -440,838.5      "/>
+        <polygon fill="#F3AB9A"  points="-509.5,226.5 -407.5,440.5 -467.5,500.5         "/>
+        <path class="trigger" data-id="{{content.allvideos.list[5].id}}" id="_x30_1" display="inline" fill="#EC7D70" d="M389.897,393.832l-3.214-113.057l-245.558-60.836l13.498,230.269 L389.897,393.832z"/>
+        <path class="trigger" data-id="{{content.allvideos.list[7].id}}" id="null" display="inline" fill="#EC7D70" d="M394.414,394.627l-3.176-113.056l130.22-58.176l1.587,217.178L394.414,394.627 z"/>
+        <path class="trigger" data-id="{{content.module1.list[0].id}}" display="inline" fill="#E6473E" d="M392.826,397.008l130.219,46.848l-242.173,97.666l-123.074-88.137 L392.826,397.008z"/>
+        <path class="trigger" data-id="{{content.module1.list[1].id}}" display="inline" fill="#E6473E" d="M521.458,215.969l137.364-58.757l-149.275-18.263l-147.185,41.288 L521.458,215.969z"/>
+        <path class="trigger" data-id="{{content.module1.list[2].id}}" display="inline" fill="#E6473E" d="M527.717,438.986V224.8l128.159,31.408v124.125L527.717,438.986z"/>
+        <path id="null_4_" display="inline" fill="none" d="M527.717,438.986V224.8l128.159,31.408v124.125L527.717,438.986z"/>
+        <path id="null_5_" display="inline" fill="#EC7D70" d="M661.958,381.021l118.311,34.145l2.382-208.037l-119.898,49.546 L661.958,381.021z"/>
+        <path class="trigger" data-id="{{content.allvideos.list[8].id}}" id="null_6_" display="inline" fill="#EC7D70" d="M530.191,442.477l130.973-57.486l119.898,34.831l-121.486,68.394 L530.191,442.477z"/>
+        <path class="trigger" data-id="{{content.module1.list[3].id}}" display="inline" fill="#E6473E" d="M666.859,488.32l118.173-67.227l128.278-5.928l-72.123,70.774 L666.859,488.32z"/>
+        <path id="null_8_" display="inline" fill="none" d="M666.859,488.32l118.173-67.227l128.278-5.928l-72.123,70.774L666.859,488.32z "/>
+        <path class="trigger" data-id="{{content.module1.list[4].id}}" display="inline" fill="#E6473E" d="M657.953,489.979l-70.668,121.484L457.86,590.82l72.484-145.594 L657.953,489.979z"/>
+        <path class="trigger" data-id="{{content.module1.list[5].id}}" display="inline" fill="#E6473E" d="M283.254,547.479l238.252-97.271l-70.715,138.954l-231.853,86.121 L283.254,547.479z"/>
+        <path id="null_11_" display="inline" fill="none" d="M283.254,547.479l238.252-97.271l-70.715,138.954l-231.853,86.121 L283.254,547.479z"/>
+        <path id="null_12_" display="inline" fill="#EC7D70" d="M276.108,544.697l-64.315,127.838L97.454,566.929l56.375-110.368 L276.108,544.697z"/>
+        <path id="null_13_" display="inline" fill="none" d="M276.108,544.697l-64.315,127.838L97.454,566.929l56.375-110.368 L276.108,544.697z"/>
+        <path id="null_14_" display="inline" fill="#EC7D70" d="M91.896,566.929l56.375-111.164l-181.832,38.908l-65.5,129.907 L91.896,566.929z"/>
+        <path id="null_15_" display="inline" fill="#F3AB9A" d="M87.925,571.892L-29.591,712.237l-122.28-12.707l51.612-71.462 L87.925,571.892z"/>
+        <path id="null_16_" display="inline" fill="#F3AB9A" d="M91.101,574.074l58.758,222.327L18.052,905.289l-42.879-191.467 L91.101,574.074z"/>
+        <path id="null_17_" display="inline" fill="#F3AB9A" d="M93.482,570.305l59.553,220.697l95.88,34.167l-37.121-144.694 L93.482,570.305z"/>
+        <path class="trigger" data-id="{{content.allvideos.list[0].id}}" id="null_18_" display="inline" fill="#EC7D70" d="M360.271,177.202l140.938-39.048l-123.47-86.959l-95.28,39.318 L360.271,177.202z"/>
+        <path class="trigger" data-id="{{content.module1.list[6].id}}" id="null_19_"  display="inline" fill="#E6473E" d="M149.858,448.621l-11.116-227.887l-159.597,76.761l4.763,116.188 L149.858,448.621z"/>
+        <path id="null_20_" display="inline" fill="none" d="M149.858,448.621l-11.116-227.887l-159.597,76.761l4.763,116.188 L149.858,448.621z"/>
+        <path class="trigger" data-id="{{content.module1.list[7].id}}" id="null_21_" display="inline" fill="#E6473E" d="M-17.679,417.652l169.126,34.144l-183.822,40.091l-84.96-50.819 L-17.679,417.652z"/>
+        <path id="null_22_" display="inline" fill="#F3AB9A" d="M463.055,596.704l123.075,19.851l84.36,173.301l-124.262-54.832 L463.055,596.704z"/>
+        <path class="trigger" data-id="{{content.module1.list[8].id}}" display="inline" fill="#E6473E" d="M662.465,154.16l-37.784-89.452l102.894-4.779l54.788,140.542 L662.465,154.16z"/>
+        <path id="null_24_" display="inline" fill="#F3AB9A" d="M658.26,154.035l-151.095-17.866l-63.3-122.279L619.52,66.281 L658.26,154.035z"/>
+        <path class="trigger" data-id="{{content.allvideos.list[4].id}}" id="null_25_" display="inline" fill="#EC7D70" d="M-20.855,413.683l-3.971-117.239l-138.16-26.483l44.466,167.437 L-20.855,413.683z"/>
+        <path id="null_26_" display="inline" fill="#F3AB9A" d="M786.852,417.061l108.377-110.565l149.523-45.536L916.302,410.9 L786.852,417.061z"/>
+        <path id="null_27_" display="inline" fill="#F3AB9A" d="M918.541,415.271l133.432-0.296l-96.186,136.867L846.62,487.421 L918.541,415.271z"/>
+        <path class="trigger" data-id="{{content.module1.list[9].id}}" display="inline" fill="#E6473E" d="M783.579,415.959L891.566,303.5l3.177-206.447l-107.987,108.78 L783.579,415.959z"/>
+        <path class="trigger" data-id="{{content.module3.list[0].id}}" display="inline" fill="#E54332" d="M356.302,178.646L278.49,92.103l-123.072,35.73l-12.706,86.547 L356.302,178.646z"/>
+        <path id="null_30_" display="inline" fill="none" d="M356.302,178.646L278.49,92.103l-123.072,35.73l-12.706,86.547 L356.302,178.646z"/>
+        <path id="null_31_" display="inline" fill="#F3AB9A" d="M216.557,683.727l238.202-89.328l-8.733,155.786l-191.357,70.511 L216.557,683.727z"/>
+        <path class="trigger" data-id="{{content.module3.list[1].id}}" id="null_32_" display="inline" fill="#E6473E" d="M-102.64,621.718l64.316-127.839l-132.603,20.646l-56.534,95.282 L-102.64,621.718z"/>
+        <path id="null_33_" display="inline" fill="#F3AB9A" d="M16.463,217.837l18.659-89.211L-166.956,72.25l34.936,71.897 L16.463,217.837z"/>
+        <path id="null_34_" display="inline" fill="#EC7D70" d="M591.029,612.536l70.668-120.692l179.449-2.383l-81.784,105.604 L591.029,612.536z"/>
+        <path class="trigger" data-id="{{content.allvideos.list[3].id}}" id="null_35_" display="inline" fill="#EC7D70" d="M14.875,221.013l-146.853-73.273l-154.608,21.779l123.642,96.807 L14.875,221.013z"/>
+        <path id="null_36_" display="inline" fill="#F3AB9A" d="M449.996,754.156l7.941-159.758l82.576,140.541l-5.559,138.269 L449.996,754.156z"/>
+        <path id="null_37_" display="inline" fill="#F3AB9A" d="M787.058,198.883L891.869,93.278L844.229-30.589L732.271,59.929 L787.058,198.883z"/>
+        <path id="null_38_" display="inline" fill="none" d="M787.058,198.883L891.869,93.278L844.229-30.589L732.271,59.929 L787.058,198.883z"/>
+        <path class="trigger" data-id="{{content.module3.list[2].id}}" display="inline" fill="#E54332" d="M843.79,490.255l-80.562,107.989l109.981,79.422l80.991-121.659 L843.79,490.255z"/>
+        <path id="null_40_" display="inline" fill="none" d="M843.79,490.255l-80.562,107.989l109.981,79.422l80.991-121.659 L843.79,490.255z"/>
+        <path class="trigger" data-id="{{content.module3.list[3].id}}" id="null_41_" display="inline" fill="#E54332" d="M-122.491,437.769l-43.959-167.014l-105.716,44.873l35.346,131.022 L-122.491,437.769z"/>
+        <path id="null_42_" display="inline" fill="#EC7D70" d="M596.369,616.273l161.443-16.789l112.098,81.898l-162.65,29.663 L596.369,616.273z"/>
+        <path id="null_43_" display="inline" fill="#F3AB9A" d="M670.558,769.35l-80.541-153.871l176.817,153.854l-40.5,0.167 L670.558,769.35z"/>
+        <path id="null_44_" display="inline" fill="#F3AB9A" d="M7.313,904.696l-35.518-188.102l-173.688,66.309l-5.558,122.386 L7.313,904.696z"/>
+        <path id="null_45_" display="inline" fill="#F3AB9A" d="M-472.655,693.18l186.396,16.674l180.435-84.664l-125.606-12.395 L-472.655,693.18z"/>
+        <path id="null_46_" display="inline" fill="#F3AB9A" d="M-285.266,714.618l181.037-87.344l-51.612,69.875l-181.831,68.286 L-285.266,714.618z"/>
+        <path id="null_47_" display="inline" fill="#F3AB9A" d="M895.837,301.924l2.88-204.276l145.602-57.278l-0.794,215.396 L895.837,301.924z"/>
+        <path id="null_48_" display="inline" fill="#F3AB9A" d="M878.237,682.543l128.634-10.803l129.629-15.906L929.68,755.907 L878.237,682.543z"/>
+        <path id="null_49_" display="inline" fill="#F3AB9A" d="M-389.284,181.826l97.933-11.509l124.395,97.101l-107.686,46.374 L-389.284,181.826z"/>
+        <path class="trigger" data-id="{{content.module3.list[4].id}}" display="inline" fill="#E54332" d="M-161.398,267.86l138.955,25.393l158.803-75.771l-117.516,5.913 L-161.398,267.86z"/>
+        <path class="trigger" data-id="{{content.allvideos.list[2].id}}" id="null_50_" display="inline" fill="#EC7D70" d="M-170.926,510.819l132.601-20.117l-83.371-49.225l-114.944,8.534 L-170.926,510.819z"/>
+        <path class="trigger" data-id="{{content.allvideos.list[6].id}}" id="null_51_" display="inline" fill="#EC7D70" d="M357.3,182.621l163.868,37.242l-132.105,58.039l-244.762-59.665 L357.3,182.621z"/>
+        <path class="trigger" data-id="{{content.module3.list[5].id}}" display="inline" fill="#E54332" d="M527.064,216.764L664.746,158.8l114.726,44.847l-116.315,47.75 L527.064,216.764z"/>
+        <path id="null_53_" display="inline" fill="#F3AB9A" d="M-241.405,449.616l65.713,61.997l-165.156-26.469l-5.293-75.166 L-241.405,449.616z"/>
+        <path display="inline" fill="#F3AB9A" d="M-340.545,408.203l98.951,37.927l-34.35-128.868l-67.387-75.207 L-340.545,408.203z"/>
+        <path id="null_54_" display="inline" fill="#F3AB9A" d="M-337.673,489.46l161.981,25.329l-54.945,93.961l-162.131,53.46 L-337.673,489.46z"/>
+        <path id="null_55_" display="inline" fill="#F3AB9A" d="M-323.248,765.435l167.407-63.124l122.09,12.338l-165.797,61.126 L-323.248,765.435z"/>
+        <path id="null_56_" display="inline" fill="#F3AB9A" d="M-383.02,706.659l96.398,5.878l-57.404,52.897L-383.02,706.659z"/> 
+        <path id="null_57_" display="inline" fill="#F3AB9A" d="M772.479,769.358l-63.16-53.85l163.768-32.651l56.5,81.056 L772.479,769.358z"/>
+        <path display="inline" fill="#F3AB9A" d="M875.076,679.253c3.704-3.179,81.678-121.058,81.678-121.058l66.804-5.822 l-19.057,115.396L875.076,679.253z"/>
+        <path id="null_58_" display="inline" fill="#F3AB9A" d="M1047.89,411.859H919.385l124.934-142.945L1047.89,411.859z"/>
+        <path id="null_59_" display="inline" fill="#F3AB9A" d="M1051.973,425.184l-93.645,129.785l64.638-5.556L1051.973,425.184z"/>
+        <path id="null_60_" display="inline" fill="#F3AB9A" d="M932.544,758.786L1024,717.834l0.833,50.166l-85.666,1.501 L932.544,758.786z"/>
+        <path id="null_61_" display="inline" fill="#F3AB9A" d="M545.411,740.309l112.003,49.547l97.207,145.084l-212.626-74.702 L545.411,740.309z"/>
+        <path id="null_62_" display="inline" fill="#F3AB9A" d="M257.775,826.899l187.13-70.825l85.288,116.46l-222.326,48.421 L257.775,826.899z"/>
+        <path class="trigger" data-id="{{content.allvideos.list[1].id}}"  id="null_63_" display="inline" fill="#EC7D70" d="M20.433,220.218l117.515-5.838l13.499-86.547l-112.752,1.588 L20.433,220.218z"/>
+        <path id="null_64_" display="inline" fill="#F3AB9A" d="M-166.956,69.473L39.489,125.45h111.165L-59.764,34.932L-166.956,69.473z" />
+        <path id="null_65_" display="inline" fill="#F3AB9A" d="M-62.568,31.944l-107.66,34.157l-204.857,11.911l117.515-40.496 L-62.568,31.944z"/>
+        <path id="null_66_" display="inline" fill="#F3AB9A" d="M-135.459,145.044l-36.261-75.175L-376.579,81.78l87.343,85.362 L-135.459,145.044z"/>
+        <path id="null_67_" display="inline" fill="#F3AB9A" d="M-515.678,79.906l118.656-11.509l104.263,99.173l-108.278,11.737 L-515.678,79.906z"/>
+        <path id="null_68_" display="inline" fill="#F3AB9A" d="M1044.454,33.344L897.561,93.689L849.123-29.384l153.248-65.11 L1044.454,33.344z"/>
+        <path id="null_69_" display="inline" fill="#F3AB9A" d="M732.271,56.054l104.811-84.658L828.5-76.167l-41.442-51.294 L732.271,56.054z"/>
+        <path id="null_70_" display="inline" fill="#F3AB9A" d="M729.094,56.148l47.643-187.58l-134.189-97.664l-25.41,141.335 L729.094,56.148z"/>
+        <path id="null_71_" display="inline" fill="#F3AB9A" d="M725.824,56.847l-103.713,3.674l-176.405-181.84L609.195-83.79 L725.824,56.847z"/>
+        <path id="null_72_" display="inline" fill="#F3AB9A" d="M457.86,13.89L619.52,62.311L470.64-86.569l-35.73-49.214L457.86,13.89z" />
+        <path id="null_73_" display="inline" fill="#F3AB9A" d="M379.327,48.743l124.266,87.824L417.441-21.444L307.868-94.495 L379.327,48.743z"/>
+        <path id="null_74_" display="inline" fill="#F3AB9A" d="M376.945,48.743L278.49,88.131L191.148-35.737l107.193-58.758 L376.945,48.743z"/>
+        <path id="null_75_" display="inline" fill="#F3AB9A" d="M276.108,88.927L184-34.147L22.021-37.324L156.21,123.862L276.108,88.927z "/>
+        <path id="null_76_" display="inline" fill="#F3AB9A" d="M-59.6,31.177l210.253,91.097L14.875-35.737l-180.323-58.758L-59.6,31.177 z"/>
+        <path id="null_77_" display="inline" fill="#F3AB9A" d="M-255.604,33.331l189.012-4.579l-98.856-123.248h-165.871L-255.604,33.331 z"/>
+        <path id="null_78_" display="inline" fill="#F3AB9A" d="M-442.137-61.621l118.656-11.509l64.323,107.463L-376.91,76.266 L-442.137-61.621z"/>
+    </g>
+    <g id="autoportrait" >
+        <!-- Background -->
+        <path id="background_1_" display="none" fill="#FFFFFF" d="M-123.919,124.044l19.688,365.207l-19.688,152.4l438.364,30.411
+            l416.586-30.411l-17.229-348.606l17.229-169.001l-418.128-24.007L-123.919,124.044z"/>
+
+        <!-- Close -->
+        <g class="close-auto">
+            <line x1="700" y1="131" x2="720" y2="150" style="stroke:rgb(0,0,0);stroke-width:5"></line>
+            <line x1="700" y1="150" x2="720" y2="131" style="stroke:rgb(0,0,0);stroke-width:5"></line>
+        </g>
+
+        <g class="close-gallery">
+            <line x1="700" y1="131" x2="720" y2="150" style="stroke:rgb(0,0,0);stroke-width:5"></line>
+            <line x1="700" y1="150" x2="720" y2="131" style="stroke:rgb(0,0,0);stroke-width:5"></line>
+        </g>
+
+        <!-- Titles -->
+        <text data-module="2" class="auto-title step-home auto-step">
+            <tspan x="-95" y="180">{{content.module2.stephometitle_line1}}</tspan>
+            <tspan x="-95" y="220">{{content.module2.stephometitle_line2}}</tspan>
+        </text>
+
+        <text data-module="2" class="auto-title auto-step step-facechange">
+            <tspan x="-95" y="180">{{content.module2.stepsecondtitle}}</tspan>
+        </text>
+
+        <text data-module="2" class="auto-title auto-step step-end">
+            <tspan x="-95" y="180">{{content.module2.partager_auto}}</tspan>
+        </text>
+
+        <text data-module="2" class="auto-title auto-step step-gallery">
+            <tspan x="-95" y="180">{{content.module2.gallerytitle}}</tspan>
+        </text>
+
+        <!-- Home pic -->
+        <image class="auto-step step-home home-image" xlink:href="{{baseurl}}img/autoportrait/intro.jpg" preserveAspectRatio="xMidYMid" x="-95" y="240" width="480" height="350"> </image>
+        
+        <rect class="rect-sizer" x="-95" y="240" width="480" height="350" fill-opacity="0"/>
+
+        <!-- Right Side buttons  -- HOME -->
+        <g class="auto-button auto-step step-home button-webcam">
+            <rect width="20" height="20" x="405" y="240"></rect>
+            <text>
+                <tspan x="445" y="257">{{content.module2.stephomeoption1}}</tspan>
+            </text>
+        </g>
+
+        <g class="auto-button auto-step step-home button-photo">
+            <rect width="20" height="20" x="405" y="300"></rect>
+            <text>
+                <tspan x="445" y="318">{{content.module2.stephomeoption2_line1}}</tspan>
+                <tspan x="445" y="338">{{content.module2.stephomeoption2_line2}}</tspan>
+            </text>
+        </g>
+
+        <g class="auto-button auto-step step-home button-facebook">
+            <rect width="20" height="20" x="405" y="360"></rect>
+            <text>
+                <tspan x="445" y="380">{{content.module2.stephomeoption3_line1}}</tspan>
+                <tspan x="445" y="405">{{content.module2.stephomeoption3_line2}}</tspan>
+            </text>
+        </g>
+
+        <!-- Right side Button facechange -->
+        <g class="auto-button auto-step step-facechange button-step1">
+            <rect width="20" height="20" x="405" y="240"></rect>
+            <text>
+                <tspan x="445" y="257">{{content.module2.autostep1}}</tspan>
+            </text>
+        </g>
+
+        <g class="auto-button auto-step step-facechange button-step2">
+            <rect width="20" height="20" x="405" y="300"></rect>
+            <text>
+                <tspan x="445" y="318">{{content.module2.autostep2}}</tspan>
+            </text>
+        </g>
+
+        <g class="auto-button auto-step step-facechange button-step3">
+            <rect width="20" height="20" x="405" y="360"></rect>
+            <text>
+                <tspan x="445" y="380">{{content.module2.autostep3}}</tspan>
+            </text>
+        </g>
+
+        <g class="auto-button auto-step step-facechange button-step4">
+            <rect width="20" height="20" x="405" y="420"></rect>
+            <text>
+                <tspan x="445" y="438">{{content.module2.colortext}}</tspan>
+            </text>
+            <rect class="button-color" width="20" height="20" x="445" y="460" fill="#f9e51d" data-color="one"></rect>
+            <rect class="button-color" width="20" height="20" x="485" y="460" fill="#c1e1da" data-color="two"></rect>
+            <rect class="button-color" width="20" height="20" x="525" y="460" fill="#eea04a" data-color="three"></rect>
+            <rect class="button-color" width="20" height="20" x="565" y="460" fill="#dbd991" data-color="four"></rect>
+            <rect class="button-color" width="20" height="20" x="605" y="460" fill="#F3AB9A" data-color="five"></rect>
+        </g>
+
+        <g class="auto-button button-validate auto-step step-facechange button-facechange-validate">
+            <rect width="100" height="50" x="405" y="500"></rect>
+            <text>
+                <tspan x="447" y="532">{{content.module2.validateauto_line1}}</tspan>
+            </text>
+        </g>
+
+        <!-- Right side Button END -->
+        <g class="auto-button auto-step step-end">
+            <rect width="20" height="20" x="405" y="240"></rect>
+            <text>
+                <tspan x="445" y="257">{{content.module2.partager_btn}}</tspan>
+            </text>
+        </g>
+
+        <g class="auto-button auto-step step-end button-save">
+            <rect width="20" height="20" x="405" y="330"></rect>
+            <text>
+                <tspan x="445" y="348">{{content.module2.save_line1}}</tspan>
+                <tspan x="445" y="373">{{content.module2.save_line2}}</tspan>
+            </text>
+        </g>
+
+        <g class="auto-button auto-step step-end button-addgallery">
+            <rect width="20" height="20" x="405" y="390"></rect>
+            <text>
+                <tspan x="445" y="410">{{content.module2.addgallery_line1}}</tspan>
+                <tspan x="445" y="435">{{content.module2.addgallery_line2}}</tspan>
+            </text>
+        </g>
+
+        <!-- END SHARE -->
+        <g class="share-button auto-step step-end button-share-facebook">
+            <rect width="40" height="40" x="444" y="270"></rect>
+            <image xlink:href="{{baseurl}}img/social/auto-facebook.png" preserveAspectRatio="xMidYMid" x="455" y="270" width="23" height="37"></image>
+        </g>
+        <g class="share-button auto-step step-end button-share-twitter">
+            <rect width="40" height="40" x="494" y="270"></rect>
+            <image xlink:href="{{baseurl}}img/social/auto-tuite.png" preserveAspectRatio="xMidYMid" x="496" y="275" width="36" height="29"></image>
+        </g>
+        <g class="share-button auto-step step-end button-share-google">
+            <rect width="40" height="40" x="544" y="270"></rect>
+            <image xlink:href="{{baseurl}}img/social/auto-google.png" preserveAspectRatio="xMidYMid" x="546" y="275" width="36" height="30"></image>
+        </g>
+
+        <g class="auto-button button-validate auto-step step-end button-end-retry">
+            <rect width="100" height="50" x="405" y="480"></rect>
+            <text>
+                <tspan x="414" y="504">{{content.module2.retry_line1}}</tspan>
+                <tspan x="430" y="523">{{content.module2.retry_line2}}</tspan>
+            </text>
+        </g>
+
+    </g>
+    <g id="info-layer" display="none">
+        <path id="info-layer-background" fill="#1A171B" d="M-124.499,109.735l-167.024,225.687l15.288,211.228l151.736,117.194
+            l469.278,32.555l445.963-32.555l-18.443-373.192l18.443-180.917L343.127,84.036L-124.499,109.735z"/>
+        <g class="close-info-layer">
+            <rect x="745" y="115" width="33" height="33" fill="red"></rect>
+            <line x1="750" y1="120" x2="774" y2="144" style="stroke:rgb(255,255,255);stroke-width:5"></line>
+            <line x1="750" y1="144" x2="774" y2="120" style="stroke:rgb(255,255,255);stroke-width:5"></line>
+        </g>
+
+        <g class="info-layer-content module2">
+            <text data-module="2" class="info-layer-left-text">
+                <tspan x="-15" y="190">{{content.module2.infoleft_line1}}</tspan>
+                <tspan x="52" y="215">{{content.module2.infoleft_line2}}</tspan>
+                <tspan x="25" y="240">{{content.module2.infoleft_line3}}</tspan>
+                <tspan x="66" y="265">{{content.module2.infoleft_line4}}</tspan>
+                <tspan x="41" y="290">{{content.module2.infoleft_line5}}</tspan>
+            </text>
+            <image class="info-layer-module2-image" data-module="0" xlink:href="{{baseurl}}img/autoportrait/info.jpg" preserveAspectRatio="none" x="150" y="170" width="567" height="401"></image>
+        </g>
+
+        <!-- MODULE 3 -->
+        <g class="info-layer-content module3">
+            <text data-module="3" class="info-layer-left-text module3">
+                <tspan x="135" y="170">{{content.module3.moreinfo_line1}}</tspan>
+                <tspan x="75" y="205">{{content.module3.moreinfo_line2}}</tspan>
+                <tspan x="53" y="240">{{content.module3.moreinfo_line3}}</tspan>
+            </text>
+        </g>
+
+        <image class="info-layer-module-image module3" xlink:href="{{baseurl}}img/infolayer/01-collage.jpg" preserveAspectRatio="xMidYMid" x="150" y="150" width="567" height="280"></image>
+        <image class="info-layer-module-image module3" xlink:href="{{baseurl}}img/infolayer/02-variation.jpg" preserveAspectRatio="xMidYMid" x="150" y="150" width="567" height="280"></image>
+        <image class="info-layer-module-image module3" xlink:href="{{baseurl}}img/infolayer/03-recuperation.jpg" preserveAspectRatio="xMidYMid" x="150" y="150" width="567" height="280"></image>
+        <image class="info-layer-module-image module3" xlink:href="{{baseurl}}img/infolayer/04-mots.jpg" preserveAspectRatio="xMidYMid" x="150" y="150" width="567" height="280"></image>
+        <image class="info-layer-module-image module3" xlink:href="{{baseurl}}img/infolayer/05-aplat.jpg" preserveAspectRatio="xMidYMid" x="150" y="150" width="567" height="280"></image>
+        <image class="info-layer-module-image module3" xlink:href="{{baseurl}}img/infolayer/06-trait.png" preserveAspectRatio="xMidYMid" x="150" y="150" width="567" height="280"></image>
+
+    </g>
+</g>
+
+<g id="interactive_layers">
+
+    <!--
+         HOME 
+    -->
+    <image class="svgelement mainpage-title" data-module="0" xlink:href="{{baseurl}}img/main-logo.png" preserveAspectRatio="none" x="150" y="250" width="389" height="270"></image>
+
+    <image class="svgelement mainpage-subtitle" data-module="0" xlink:href="{{baseurl}}img/main-subtitle.png" preserveAspectRatio="none" x="355" y="510" width="160" height="96"></image>
+
+    <g data-module="0" class="mainpage-link-special svgelement">
+        <text>
+            <tspan x="-321" y="106">{{home.tv_link_line1}}</tspan>
+            <tspan x="-328" y="135">{{home.tv_link_line2}}</tspan>
+        </text>
+    </g>
+
+    <g data-module="0" class="mainpage-link-boutique svgelement" >
+        <text>
+            <tspan x="-320" y="267">{{home.boutique_link_line1}}</tspan>
+            <tspan x="-320" y="290">{{home.boutique_link_line2}}</tspan>
+        </text>
+    </g>
+
+    <text class="mainpage-choose-button svgelement" data-module="0" x="784.081" y="218">
+        <tspan x="784" y="218" dy="0">{{home.choose_btn}}</tspan>
+    </text>
+    
+    <g class="mainpage-validate-button svgelement" data-module="0">
+        <circle cx="695" cy="180" r="23" />
+        <text x="685" y="187">{{home.valid_btn}}</text>
+    </g>
+
+    <!-- Texts Intro -->
+    <g class="mainpage-selector-item item1 svgelement" data-module="0">
+        <text class="title" x="425" y="132">{{home.module_1_title_1}}</text>
+        <line x1="425" y1="140" x2="650" y2="140" style="stroke:rgb(0,0,0);stroke-width:2"></line>
+        <text x="425" y="161">{{home.module_1_title_2}}</text>
+        <text x="425" y="180">{{home.module_1_title_3}}</text>
+    </g>
+
+    <g class="mainpage-selector-item item2 svgelement" data-module="0">
+        <text class="title" x="425" y="132">{{home.module_2_title_1}}</text>
+        <line x1="425" y1="140" x2="650" y2="140" style="stroke:rgb(0,0,0);stroke-width:2"></line>
+        <text x="425" y="161">{{home.module_2_title_2}}</text>
+        <text x="425" y="180">{{home.module_2_title_3}}</text>
+    </g>
+
+    <g class="mainpage-selector-item item3 svgelement" data-module="0">
+        <text class="title" x="425" y="135">{{home.module_3_title_1}}</text>
+        <line x1="425" y1="143" x2="650" y2="143" style="stroke:rgb(0,0,0);stroke-width:2"></line>
+        <text x="425" y="164">{{home.module_3_title_2}}</text>
+        <text x="425" y="184">{{home.module_3_title_3}}</text>
+    </g>
+
+    <!-- Numbers Intro -->
+    <defs><clipPath id="clippathnumber">
+        <rect x="590" y="230" width="40" height="90"></rect>
+    </clipPath></defs>
+    <image class="svgelement mainpage-number number-01" data-module="0" xlink:href="{{baseurl}}img/number1.png" preserveAspectRatio="none" x="590" y="320" width="27" height="88" style="clip-path: url(#clippathnumber);"></image>
+    <image class="svgelement mainpage-number number-02" data-module="0" xlink:href="{{baseurl}}img/number2.png" preserveAspectRatio="none" x="590" y="320" width="40" height="77" style="clip-path: url(#clippathnumber);"></image>
+    <image class="svgelement mainpage-number number-03 active" data-module="0" xlink:href="{{baseurl}}img/number3.png" preserveAspectRatio="none" x="590" y="230" width="40" height="89" style="clip-path: url(#clippathnumber);"></image>
+    
+
+    <!-- /END HOME -->
+
+    <!-- MODULE 1 -->
+    <text data-module="1" class="info-left svgelement">
+        <tspan x="-269" y="360">{{content.module1.infoleft_line1}}</tspan>
+        <tspan x="-251" y="380">{{content.module1.infoleft_line2}}</tspan>
+        <tspan x="-242" y="400">{{content.module1.infoleft_line3}}</tspan>
+        <tspan x="-225" y="420">{{content.module1.infoleft_line4}}</tspan>
+    </text>
+
+    <!-- MODULE 2 -->
+    <text data-module="2" class="info-left svgelement isactivable">
+        <tspan x="-276" y="357">{{content.module2.infoleft_line1}}</tspan>
+        <tspan x="-227" y="373">{{content.module2.infoleft_line2}}</tspan>
+        <tspan x="-245" y="390">{{content.module2.infoleft_line3}}</tspan>
+        <tspan x="-219" y="404">{{content.module2.infoleft_line4}}</tspan>
+        <tspan x="-235" y="420">{{content.module2.infoleft_line5}}</tspan>
+        <tspan x="-218" y="464" class="bigger">{{content.module2.infoleft_line7}}</tspan>
+    </text>
+    <text data-module="2" class="info-right svgelement isactivable" fill="#FFF">
+        <tspan x="815" y="337">{{content.module2.discover_line1}}</tspan>
+        <tspan x="815" y="367">{{content.module2.discover_line2}}</tspan>
+    </text>
+    
+    
+    <!-- MODULE 3 -->
+    <text data-module="3" class="info-left svgelement isactivable">
+        <tspan x="-234" y="360">{{content.module3.moreinfo_line1}}</tspan>
+        <tspan x="-262" y="380">{{content.module3.moreinfo_line2}}</tspan>
+        <tspan x="-274" y="400">{{content.module3.moreinfo_line3}}</tspan>
+        <tspan x="-230" y="460" class="bigger">{{content.module3.moreinfo_line4}}</tspan>
+    </text>
+
+    <!-- COMMON -->
+    <text data-module="1|3" class="see-all-button svgelement" x="817.889" y="620">
+        <tspan x="817" y="620" dy="0">{{common.allfilms_line1}}</tspan>
+        <tspan x="817" y="620" dy="26">{{common.allfilms_line2}}</tspan>
+    </text>
+
+    <image class="home-link svgelement" data-module="1|2|3|4" xlink:href="{{baseurl}}img/logo-back.png" preserveAspectRatio="none" x="760" y="52" width="100" height="30"></image>
+
+</g>
+
+</svg>

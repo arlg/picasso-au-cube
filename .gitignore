@@ -1,0 +1,6 @@
+.sass-cache
+/build/img
+/build/vendor
+/node_modules
+/build/video
+/src/scss/bourbon

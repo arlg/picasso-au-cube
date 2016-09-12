@@ -1,0 +1,180 @@
+/// Autoportrait
+.mod-auto-wrapper, .mod-auto-gallery{
+    position: absolute;
+    background: url('../../img/mobile/auto-bg.png') no-repeat;
+    @include size(67.0774648%, 79.6875%);
+    background-size: 100%;
+    left: 15%;
+    top: 13%;
+
+    h3{
+        color: #000;
+        font-weight: bold;
+        width: 90%;
+        margin: 5% 0 0 4%;
+    }
+
+    .left-side{
+        float: left;
+        margin: 2% 2% 0 4%;
+        width: 55%;
+    }
+
+    .right-side{
+        float: left;
+        margin: 0;
+        width: 39%;
+    }
+
+    .auto-button{
+        margin: 0 0 15px 0;
+        p{
+            text-decoration: underline;
+            font-size:13px;
+        }
+    }
+}
+
+.mod-auto-gallery{
+    display: none;
+    position: absolute;
+    background: #FFF;
+    width: 100%;
+    width: 63%;
+    left: 17%;
+    height: 69%;
+    top: 17%;
+
+    &.active{
+        display: block;
+    }
+
+    .gallery-container{
+    width: 90%;
+    height: 82%;
+    margin: 5px auto 0 auto;
+    }
+
+    .gallery-item{
+        width: 47%;
+        height: auto;
+        float: left;
+        margin: 0 3% 5px 0;
+        border: 1px solid #222;
+
+        &:nth-child(2n){
+            margin: 0 0 5px 0;
+        }
+
+        img{
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}
+.close-auto, .close-gallery{
+    background: url("../../img/close-video.png") no-repeat;
+    width: 18px;
+    height: 18px;
+    background-size: 18px;
+    position: absolute;
+    top: 12px;
+    right: 2px;
+}
+
+.mod-auto-step{
+    display: none;
+    @include clearfix();
+
+    
+
+    &.step-picture{
+        text-align: center;
+        
+        .input-field{
+            margin: 10% 0 0 0;
+
+            label, input{
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+
+     &.step-facechange .info-webcam{
+        letter-spacing: 0.04em;
+        font-size: 25px;
+        text-align: center;
+     }
+
+    .info-webcam {
+        position: absolute;
+        z-index: 1;
+        top: 0; left: 0;
+        display: none;
+
+        &.active{
+            display: block;
+        }
+
+    }
+    
+    canvas{
+        position: relative;
+        z-index: 2;
+    }
+
+    .mod-auto-left{
+        display: inline-block;
+        width: 100%;
+        position: relative;
+    }
+
+    &.active{
+        display: block;
+    }
+
+}
+
+.mod-auto-step.step-facebook-01{
+    .mod-auto-left{
+        background: none;
+        border: none;
+        overflow: scroll;
+        height: 300px;
+        max-height: 300px;
+        margin: 4vh 0 0 0;
+
+        >div>div{
+            float: left;
+            width: 45%;
+            height: 100%;
+            max-height: 100px;
+            margin: 0 4% 5px 0;
+            padding: 1%;
+            background: #000;
+            height: 100%;
+            overflow: hidden;
+
+            &:nth-child(2n){
+                margin: 0;
+            }
+
+            &:hover, &.active{
+                border: 1px solid red;
+            }
+        }
+
+        img{
+            max-width: 100%;
+            width: 100%; 
+
+            
+        }
+    }
+}
+
+.mod-auto-step-end-image{
+    width: 100%;
+    max-width: 100%;
+}

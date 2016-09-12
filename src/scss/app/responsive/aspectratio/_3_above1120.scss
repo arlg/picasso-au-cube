@@ -1,0 +1,52 @@
+@media screen and (min-width: 1120px), screen and (min-height: 731px) {
+
+    // /****
+    //     AUTOPORTRAIT
+    // ****/
+
+    .mod-auto-wrapper{
+        // width: 690px;
+    }
+
+    .mod-auto-step{
+        h3{
+            font-size: 34px;
+        }
+
+    }
+
+    .mod-auto-wrapper .auto-button{
+        font-size: 20px;
+
+        .square{
+            @include square(20px);
+        }
+    }
+
+    .mod-auto-step.mod-auto-gallery .gallery-container{
+        height: 380px;
+    }
+    
+    // /****
+    //     FOOTER
+    // ****/
+    .section-footer{
+        .content{
+            top: 25px;
+        }
+        .background .title-underline{
+            top: 91px;
+            padding: 0 0 0 30px;
+        }
+
+    }
+
+    // /****
+    //     MODULES
+    // ****/
+    .moreinfo-layer{
+        .text-under{
+            font-size: 18px;
+        }
+    }
+}

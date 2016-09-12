@@ -1,0 +1,7 @@
+#arte-header{
+    height: 100px;
+    position: relative;
+    z-index: 100;
+}
+
+@media (max-width: 880px) {#arte-header-iframe {height: 50px;} #arte-header{height: 50px;}}

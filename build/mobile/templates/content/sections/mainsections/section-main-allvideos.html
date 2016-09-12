@@ -1,0 +1,59 @@
+<section class="section-main-allvideos section-main mod-main-module">
+    <header>
+        <h2>
+            <p class="page-title">{{content.allvideos.title}}</p>
+            {% for item in content.module1.list %}
+
+                <p data-youtubeid="{{ item.id }}" class="video-name">{{ item.fullname }}</p>
+                    
+            {% endfor %}
+            {% for item in content.module3.list %}
+
+                <p data-youtubeid="{{ item.id }}" class="video-name">{{ item.fullname }}</p>
+                    
+            {% endfor %}
+            {% for item in content.allvideos.list %}
+
+                <p data-youtubeid="{{ item.id }}" class="video-name">{{ item.fullname }}</p>
+                    
+            {% endfor %}
+            <div class="background"></div>
+        </h2>
+    </header>
+    
+   <!--  <div class="background-allvideos">
+        {% include 'bgmobile.svg' %}
+    </div> -->
+
+    <div class="ascenceur-wrapper">
+        <div class="ascenceur-inside">
+            <ul>
+            {% for item in content.module1.list %}
+
+                <li data-youtubeid="{{ item.id }}" class="">
+                    <p>{{ item.fullname }}</p>
+                    <img src="{{baseurl}}img/allvideos/{{ item.picture }}" alt="{{ item.fullname }}" />
+                </li>
+                    
+            {% endfor %}
+            {% for item in content.module3.list %}
+
+                <li data-youtubeid="{{ item.id }}" class="">
+                    <p>{{ item.fullname }}</p>
+                    <img src="{{baseurl}}img/allvideos/{{ item.picture }}" alt="{{ item.fullname }}" />
+                </li>
+                    
+            {% endfor %}
+            {% for item in content.allvideos.list %}
+                <li data-youtubeid="{{ item.id }}" class="">
+                    <p>{{ item.fullname }}</p>
+                    <img src="{{baseurl}}img/allvideos/{{ item.picture }}" alt="{{ item.fullname }}" />
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <div class="back-home-button"><a href="/">Home</a><div class="bg"></div></div>
+    
+</section>

@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="-343 0 1368 768" enable-background="new -343 0 1368 768" xml:space="preserve" preserveAspectRatio="xMinYMin slice">
+<style type="text/css">
+<![CDATA[
+
+
+	/**********
+		HOME 
+	***********/
+
+	.mainpage-link-special{
+		font-size: 32px;
+		font-weight: bold;
+	}
+
+	.mainpage-link-boutique{
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	.mainpage-choose-button{
+		font-size: 40px;
+		font-weight: bold;
+		text-transform:uppercase;
+		pointer-events:none;
+	}
+	
+	.mainpage-validate-button{
+		cursor: pointer;
+	}
+
+	.mainpage-validate-button:hover{
+
+	}
+
+	.mainpage-validate-button circle{
+		fill : #000000;
+
+		-webkit-transition: fill 0.3s ease-in, -webkit-transform 0.3s ease-in;
+        transition: fill 0.3s ease-in, transform 0.3s ease-in;
+
+        -webkit-transform-origin: center;
+	    -moz-transform-origin: center;
+	    transform-origin: center;
+
+	    -webkit-transform: scale(1);
+		transform: scale(1);
+
+	}
+
+	.mainpage-validate-button text{
+		fill: #FFFFFF;
+		pointer-events: none;
+
+		-webkit-transition: fill 0.3s ease-out;
+        transition: fill 0.3s ease-out;
+	}
+
+	.mainpage-validate-button:hover circle{
+		fill: #FFFFFF;
+
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+		
+	}
+	
+	.mainpage-validate-button:hover text{
+		fill: #000000;
+	}
+
+	.mainpage-selector-item{
+		fill: #000000;
+		font-size: 24px;
+		opacity: 0;
+		
+		-webkit-transition: opacity 0.3s ease-out, -webkit-transform 0.3s ease-out;
+        transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+
+        -webkit-transform: translate3d(0px, 10px, 0px);
+		-moz-transform: translate3d(0px, 10px, 0px);
+		-ms-transform: translate3d(0px, 10px, 0px);
+		-o-transform: translate3d(0px, 10px, 0px);
+		transform: translate3d(0px, 10px, 0px);
+	}
+
+	.mainpage-selector-item.active{
+		opacity: 1;
+
+		-webkit-transform: translate3d(0px, 0px, 0px);
+		-moz-transform: translate3d(0px, 0px, 0px);
+		-ms-transform: translate3d(0px, 0px, 0px);
+		-o-transform: translate3d(0px, 0px, 0px);
+		transform: translate3d(0px, 0px, 0px);
+	}
+
+	.mainpage-selector-item text{
+		font-size: 0.76em;
+	}
+
+	.mainpage-selector-item text.title{
+		font-weight: bold;
+		font-size: 1em;
+	}
+
+	.mainpage-number{
+		opacity: 0;
+		-webkit-transition: opacity 0.4s ease-out;
+        transition: opacity 0.4s ease-out;
+	}
+	.mainpage-number.active{
+		opacity: 1;
+	}
+
+	/***
+		HOME ANIMATION
+	****/
+
+	.mainpage-link-special, .mainpage-subtitle, .mainpage-validate-button, .mainpage-number, .mainpage-choose-button{
+		opacity: 0;
+
+		-webkit-transition: opacity 0.4s ease-out;
+        transition: opacity 0.4s ease-out;
+	}
+
+	.mainpage-link-special.isvisible, .mainpage-subtitle.isvisible, .mainpage-validate-button.isvisible, .mainpage-number.isvisible, .mainpage-choose-button.isvisible{
+		opacity: 1;
+	}
+
+	
+	/**********
+		MODULES 
+	***********/
+	.info-left{
+		fill: #FFF;
+		font-size: 17px;
+		pointer-events : none;
+	}
+
+	.info-left .bigger{
+		font-size: 22px;
+	}
+
+	.see-all-button{
+		font-weight: bold;
+		font-size: 30px;
+		fill: #000;
+		pointer-events:none;
+	}
+
+	.home-link{
+		pointer-events:none;
+	}
+
+	.info-right{
+		font-size: 32px;
+		font-weight: bold;
+		pointer-events:none;
+	}
+
+
+	/*********
+		SEE MORE
+	**********/
+	.close-info-layer{
+		cursor: pointer;
+	}
+
+	.close-info-layer rect{
+		opacity: 0;
+	}
+	
+	.info-layer-content{
+		display: none;
+	}
+
+	.info-layer-content.active{
+		display: block;
+	}
+
+	.info-layer-left-text{
+		fill: #FFFFFF;
+		font-size: 24px;
+	}
+
+	.info-layer-left-text.module3{
+		font-size: 35px;
+	}
+
+	.info-layer-module-image{
+		display: none;
+	}
+
+	.info-layer-module-image.active{
+		display: block;
+	}
+
+	/****
+		AUTO
+	****/
+	.close-auto{
+		cursor: pointer;
+		display: none;
+	}
+
+	.close-auto.active{
+		display: block;
+	}
+
+	.auto-step{
+		display: none;
+	}
+
+	.auto-step.active{
+		display: block;
+	}
+
+	.auto-title{
+		font-weight: bold;
+        font-size: 44px;
+	}
+
+	.auto-button{
+		fill: #e75c25;
+		font-size: 24px;
+		cursor: pointer;
+	}
+
+	.auto-button:hover{
+		font-size: 28px;
+	}
+
+	.auto-button.button-validate text{
+		fill: #FFFFFF;
+		font-size: 20px;
+	}
+
+	.auto-button.button-validate:hover text{
+		font-size: 20px;
+	}
+
+
+	.share-button rect{
+		fill: #e75c25;
+	}
+
+]]>
+</style>
+<g id="Layer_1_1_">
+	<g id="background">
+
+		<g id="outside">
+			<path  fill="#FFFFFF" id="poly-133" d="M-475.5,-168.5L-297.5 -162.5 -348.5 -11.5 -481.5 -12.5 -562.5 -126.5 z"/>
+	        <path  fill="#FFFFFF" id="poly-132" d="M-398.5,112.5L-513.5 224.5 -416.5 268.5 -348.5 241.5 -350.5 166.5 z"/>
+	        <path  fill="#FFFFFF" id="poly-131" d="M-361.5,253.5L-348.5 279.5 -426.5 378.5 -474.5 298.5 z"/>
+	        <path  fill="#FFFFFF" id="poly-130" d="M-549.5,223.5L-424.5 270.5 -567.5 331.5 z"/>
+	        <path  fill="#FFFFFF" id="poly-129" d="M-347.5,284.5L-472.5 456.5 -411.5 499.5 -347.5 478.5 z"/>
+	        <path  fill="#FFFFFF" id="poly-128" d="M-481.5,297.5L-431.5 379.5 -497.5 486.5 -582.5 348.5 z"/>
+	        <path  fill="#FFFFFF" id="poly-127" d="M-475.5,461.5L-416.5 500.5 -503.5 579.5 -515.5 539.5 z"/>
+	        <path  fill="#FFFFFF" id="poly-126" d="M-416.5,511.5L-347.5 567.5 -348.5 665.5 -494.5 579.5 z"/>
+	        <path  fill="#FFFFFF" id="poly-125" d="M-347.416,670.493L-496.781 581.893 -545.148 691.468 z"/>
+	        <path  fill="#FFFFFF" id="poly-124" d="M-350.5,675.5L-494.5 692.5 -349.5 759.5 z"/>
+	        <path  fill="#FFFFFF" id="poly-123" d="M-344.958,765.462L-503.561 691.821 -537.447 697.544 -535.403 793.521 z"/>
+	        <path  fill="#FFFFFF" id="poly-122" d="M-534.5,798.5L-348.5 774.5 -347.5 921.5 z"/>
+	        <path  fill="#FFFFFF" id="poly-121" d="M-538.5,804.5L-356.5 923.5 -553.5 972.5 z"/>
+	        <path  fill="#FFFFFF" id="poly-120" d="M-519.5,546.5L-509.5 583.5 -550.5 687.5 z"/>
+	        <path  fill="#FFFFFF" id="poly-119" d="M-522.5,539.5L-599.5 367.5 -585.5 355.5 -505.5 488.5 z"/>
+	        <path  fill="#FFFFFF" id="poly-118" d="M-490.5,-1.5L-462.5 160.5 -525.5 226.5 -589.5 203.5 z"/>
+	        <path  fill="#FFFFFF" id="poly-117" d="M-491.5,-11.5L-595.5 198.5 -683.5 61.5 z"/>
+	        <path  fill="#FFFFFF" id="poly-116" d="M-601.5,381.5L-530.5 541.5 -556.5 681.5 z"/>
+	        <path  fill="#FFFFFF" id="poly-115" d="M-542.5,699.5L-541.5 792.5 -626.5 760.5 z"/>
+	        <path  fill="#FFFFFF" id="poly-114" d="M-571.5,639.5L-558.5 698.5 -628.5 753.5 z"/>
+	        <path  fill="#FFFFFF" id="poly-113" d="M283.5,866.5L587.5 871.5 649.5 892.5 644.5 913.5 222.5 888.5 z"/>
+	        <path  fill="#FFFFFF" id="poly-112" d="M896.5,-129.5L1042.5 -59.5 1085.5 -104.5 z"/>
+	        <path  fill="#FFFFFF" id="poly-111" d="M1090.5,-96.5L1075.5 -78.5 1038.5 376.5 1142.5 -43.5 z"/>
+	        <path  fill="#FFFFFF" id="poly-110" d="M1032.5,389.5L1024 580.5 1066.5 592.5 1141.5 326.5 z"/>
+	        <path  fill="#FFFFFF" id="poly-109" d="M1148.5,-37.5L1045.5 374.5 1137.5 321.5 1227.5 -4.5 z"/>
+	        <path  fill="#FFFFFF" id="poly-108" d="M1100.5,-101.5L1148.5 -47.5 1226.5 -11.5 1239.5 -83.5 z"/>
+	        <path  fill="#FFFFFF" id="poly-107" d="M1146.5,330.5L1074.5 594.5 1177.5 616.5 z"/>
+	        <path  fill="#FFFFFF" id="poly-106" d="M1233.5,1.5L1148.5 318.5 1166.5 427.5 1285.5 44.5 z"/>
+	        <path  fill="#FFFFFF" id="poly-105" d="M1244.5,-80.5L1236.5 -9.5 1285.5 35.5 1317.5 -69.5 z"/>
+	        <path  fill="#FFFFFF" id="poly-104" d="M1167.5,431.5L1192.5 611.5 1270.5 271.5 z"/>
+	        <path  fill="#FFFFFF" id="poly-103" d="M1173.5,413.5L1291.5 49.5 1352.5 130.5 z"/>
+	        <path  fill="#FFFFFF" id="poly-102" d="M1073.5,604.5L1105.5 906.5 1218.5 892.5 z"/>
+	        <path  fill="#FFFFFF" id="poly-101" d="M1084.5,606.5L1221.5 886.5 1320.5 721.5 z"/>
+	        <path  fill="#FFFFFF" id="poly-100" d="M1095.5,605.5L1320.5 711.5 1338.5 659.5 1197.5 628.5 z"/>
+	        <path  fill="#FFFFFF" id="poly-99" d="M1196.5,619.5L1262.5 331.5 1337.5 649.5 z"/>
+
+			<path fill="#FFFFFF" id="poly-98" d="M-291,830.5L-233.5 801.5 -88 856 -94 920 -290.5 922.5 z"/>
+	        <path fill="#FFFFFF" id="poly-97" d="M-84.5,775.5L-82.5 852.5 -15.5 872 -44.5 777.5 z"/>
+	        <path fill="#FFFFFF" id="poly-96" d="M-40.5,780L7 916 159 874.5 z"/>
+	        <path fill="#FFFFFF" id="poly-95" d="M-86,858L-89.5 918 1 918.5 -11 879 z"/>
+	        <path fill="#FFFFFF" id="poly-94" d="M239.5,775.5L169 887.5 213 898.5 z"/>
+	        <path fill="#FFFFFF" id="poly-93" d="M11.5,917.5L162 877.5 80.5 921.5 z"/>
+	        <path fill="#FFFFFF" id="poly-92" d="M673.5,775L658.5 894 723 824 z"/>
+	        <path fill="#FFFFFF" id="poly-91" d="M602,776L587 792 589 864 655.5 890 658 853 606 776.5 z"/>
+	        <path fill="#FFFFFF" id="poly-90" d="M724,827.5L659.5 899.5 739 922.5 z"/>
+	        <path fill="#FFFFFF" id="poly-89" d="M825.5,-34.5L779 -123.5 713.5 -12 z"/>
+	        <path fill="#FFFFFF" id="poly-88" d="M651.5,-9L671 -2 709 -8 779 -130.5 z"/>
+	        <path fill="#FFFFFF" id="poly-87" d="M626.5,-59.5L647.5 -11 769 -127 z"/>
+	        <path fill="#FFFFFF" id="poly-86" d="M783,-126L820 -58.5 946 -60.5 879 -129.5 z"/>
+	        <path fill="#FFFFFF" id="poly-85" d="M885.5,-128L949.5 -64.5 1040 -52.5 z"/>
+	        <path fill="#FFFFFF" id="poly-84" d="M493,-5.5L617.5 -48.5 579.5 -134 z"/>
+	        <path fill="#FFFFFF" id="poly-83" d="M584.5,-132.5L618.5 -59.5 771.5 -131.5 z"/>
+	        <path fill="#FFFFFF" id="poly-82" d="M570.5,-131.5L486 -3 371 -4 z"/>
+	        <path fill="#FFFFFF" id="poly-81" d="M566.5,-133L366.5 -5.5 368.5 -147 z"/>
+	        <path fill="#FFFFFF" id="poly-80" d="M255,-147L252.5 -2.5 361 -6.5 363.5 -144.5 z"/>
+	        <path fill="#FFFFFF" id="poly-79" d="M251.5,-145.5L244.5 -2 203 -5.5 z"/>
+	        <path fill="#FFFFFF" id="poly-78" d="M248.5,-145.5L196 -4 36 -25.5 z"/>
+	        <path fill="#FFFFFF" id="poly-77" d="M243.5,-146L240.49 -145.994 -35 -145.5 -27 -1 28 -22 z"/>
+	        <path fill="#FFFFFF" id="poly-76" d="M-37,-144.5L-32.5 -12.5 -109.5 -1.5 z"/>
+	        <path fill="#FFFFFF" id="poly-75" d="M-288,-7L-112 -149 -115.5 -4.5 z"/>
+	        <path fill="#FFFFFF" id="poly-74" d="M-111.5,-7.5L-107 -148.5 -40 -147 z"/>
+	        <path fill="#FFFFFF" id="poly-73" d="M-342,-3L-283.5 -165 -223.5 -158 -296 -2.5 z"/>
+	        <path fill="#FFFFFF" id="poly-72" d="M-213,-170L-288.5 -12 -109.5 -155.5 z"/>
+	        <path fill="#FFFFFF" id="poly-71" d="M-291.5,773L-193 773 -233.5 796 -291 825.5 z"/>
+		</g>
+		
+		<g id="inside">
+
+			<path fill="#FFFFFF" id="poly-70" d="M-86.143,772.468l-65.594-18.816L-232.5,798.5l147,55L-86.143,772.468z"/>
+			<path fill="#FFFFFF" id="poly-69" d="M279.475,751.229L585.097,645.54L584.5,866.5l-303-5L279.475,751.229z"/>
+			<path fill="#FFFFFF" id="poly-68" d="M276.306,748.101l-13.368-68.772L219.5,882.5l56-22L276.306,748.101z"/>
+			<path fill="#FFFFFF" id="poly-67" d="M167.5,878.5l-44.365-136.939l137.496-61.64l-20.857,89.733L167.5,878.5z"/>
+			<path fill="#FFFFFF" id="poly-66" d="M154.5,863.5L24.085,752.525l-66.962,22.366L154.5,863.5z"/>
+			<path fill="#FFFFFF" id="poly-65" d="M-291.502,769.763l-0.365-60.481l135.843,42.792l-34.875,18.099L-291.502,769.763z"/>
+			<path fill="#FFFFFF" id="poly-64" d="M-295.273,707.315V923.5l-46.717,1l-1.093-253.178L-295.273,707.315z"/>
+			<path fill="#FFFFFF" id="poly-63" d="M978.463,688.739L960.5,895.5l138,14l-30-310l-62.605-14.196L978.463,688.739z"/>
+			<path fill="#FFFFFF" id="poly-62" d="M808.5,885.5l-41.18-195.95l205.027,3.123L953.5,897.5L808.5,885.5z"/>
+			<path fill="#FFFFFF" id="poly-61" d="M711.004,708.534l51.054-21.068L804.5,888.5l-62,38L711.004,708.534z"/>
+			<path fill="#FFFFFF" id="poly-60" d="M605.617,769.35l26.719-71.464l38.222,71.464l-10.474,79.219L605.617,769.35z"/>
+			<path fill="#FFFFFF" id="poly-59" d="M265.573,678.286l291.379-125.224l26.944,89.019L279.359,747.259L265.573,678.286z"/>
+			<path fill="#FFFFFF" id="poly-58" d="M569.859,457.416L299.218,569.332l-35.285,106.466l292.292-126.744L569.859,457.416z"/>
+			<path fill="#FFFFFF" id="poly-57" d="M95.941,534.504L-26.796,599.54l149.165,138.127l136.6-60.378L95.941,534.504z"/>
+			<path fill="#FFFFFF" id="poly-56" d="M-29.431,600.914l148.593,139.809L156.5,858.5L48.042,769.347L25.026,749.32L-29.431,600.914z"/>
+			<path fill="#FFFFFF" id="poly-55" d="M-32.37,603.088l53.273,146.414l-78.974,25.702l-35.286-112.999L-32.37,603.088z"/>
+			<path fill="#FFFFFF" id="poly-54" d="M-61.928,775.204l-34.445-112.083l-145.745-20.273l-50.276,63.613L-61.928,775.204z"/>
+			<path fill="#FFFFFF" id="poly-53" d="M-246.488,642.006l-48.367,61.936l-48.224-35.063l0.389-100.972L-246.488,642.006z"/>
+			<path fill="#FFFFFF" id="poly-52" d="M1018.521,581.625l-11.106-2.403l12.987-111.409L1018.521,581.625z"/>
+			<path fill="#FFFFFF" id="poly-51" d="M1001.454,579.409l-176.22-38.104l12.979-111.413l186.159-48.128L1001.454,579.409z"/>
+			<path fill="#FFFFFF" id="poly-50" d="M767.889,683.729l55.776-137.8l176.067,39.079l-27.431,101.96L767.889,683.729z"/>
+			<path fill="#FFFFFF" id="poly-49" d="M618.895,559.733l92.109,145.718l49.583-21.26L674.02,557.554L618.895,559.733z"/>
+			<path fill="#FFFFFF" id="poly-48" d="M615.457,559.999l19.4,133.858l40.571,75.49L714.5,811.5l0.632-42.154l-8.328-63.892L615.457,559.999z"/>
+			<path fill="#FFFFFF" id="poly-47" d="M612.288,560.087l17.756,133.166l-29.957,76.097L591.5,783.5l-3.308-137.451L612.288,560.087z"/>
+			<path fill="#FFFFFF" id="poly-46" d="M572.151,458.064l-12.868,91.832l27.303,90.615l24.175-83.947L572.151,458.064z"/>
+			<path fill="#FFFFFF" id="poly-45" d="M359.863,369.302L569.9,453.699L298.913,564.521L122.367,432.77L359.863,369.302z"/>
+			<path fill="#FFFFFF" id="poly-44" d="M260.305,674.96l35.287-107.97L119.199,434.298l-20.927,97.151L260.305,674.96z"/>
+			<path fill="#FFFFFF" id="poly-43" d="M116.067,433.65L94.455,529.77l-121.822,65.839l18.177-83.558L116.067,433.65z"/>
+			<path fill="#FFFFFF" id="poly-42" d="M-31.223,597.287l-63.661,60.948l21.538-83.228l60.797-61.87L-31.223,597.287z"/>
+			<path fill="#FFFFFF" id="poly-41" d="M-15.376,511.723l-140.757-23.709l-117.469,60.437l198.843,21.349L-15.376,511.723z"/>
+			<path fill="#FFFFFF" id="poly-40" d="M-97.899,658.945l21.613-85.254l-199.606-22.575l35.286,88.796L-97.899,658.945z"/>
+			<path fill="#FFFFFF" id="poly-39" d="M-342.812,561.847l98.004,77.641l-35.03-89.672l-62.853-68.856L-414.5,504.5L-342.812,561.847z"/>
+			<path fill="#FFFFFF" id="poly-38" d="M761.695,306.233l169.921-60.172l88.562,130.631l-182.455,48.335L761.695,306.233z"/>
+			<path fill="#FFFFFF" id="poly-37" d="M700.922,406.77l56.998-98.662l76.125,121.237l-14.136,111.953L700.922,406.77z"/>
+			<path fill="#FFFFFF" id="poly-36" d="M699.321,410.326L676.95,554.744l87.78,126.787l54.285-135.739L699.321,410.326z"/>
+			<path fill="#FFFFFF" id="poly-35" d="M573.524,455.504l41.247,100.117l58.405-1.291l21.902-144.004L573.524,455.504z"/>
+			<path fill="#FFFFFF" id="poly-34" d="M362.842,366.169l-1.528-182.882l209.347,43.663v222.823L362.842,366.169z"/>
+			<path fill="#FFFFFF" id="poly-33" d="M358.395,365.483l-0.9-181.509l-245.553,14.625l6.378,231.116L358.395,365.483z"/>
+			<path fill="#FFFFFF" id="poly-32" d="M115.305,430.555l-6.339-230.183L-13.695,310.604l3.055,197.553L115.305,430.555z"/>
+			<path fill="#FFFFFF" id="poly-31" d="M104.763,197.432L-16.216,307.265l-149.77-20.619l107.915-103.8L104.763,197.432z"/>
+			<path fill="#FFFFFF" id="poly-30" d="M-166.75,290.297l150,19.377l2.253,199.281l-140.835-23.579L-166.75,290.297z"/>
+			<path fill="#FFFFFF" id="poly-29" d="M-275.361,546.348l116.371-60.265l-10.302-196.624l-121.421,44.77L-275.361,546.348z"/>
+			<path fill="#FFFFFF" id="poly-28" d="M-171.523,286.493L-288.27,216.13l-54.812,29.546L-354.5,253.5l11.419,19.338l50.109,58.925
+				L-171.523,286.493z"/>
+			<path fill="#FFFFFF" id="poly-27" d="M-343.098,475.614l64.563,70.124l-16.382-211.947l-47.627-55.439L-343.098,475.614z"/>
+			<path fill="#FFFFFF" id="poly-26" d="M1022.474,369.304l-89.093-130.545l-8.208-132.249l66.017-86.159L1022.474,369.304z"/>
+			<path fill="#FFFFFF" id="poly-25" d="M759.921,302.645l168.61-61.792l-8.794-132.662L759.081,147.58L759.921,302.645z"/>
+			<path fill="#FFFFFF" id="poly-24" d="M698.212,403.599l58.503-99.691l-0.841-157.347l-57.015-18.53L698.212,403.599z"/>
+			<path fill="#FFFFFF" id="poly-23" d="M575.32,227.474l121.285-97.231l-2.329,276.446l-120.636,44.765L575.32,227.474z"/>
+			<path fill="#FFFFFF" id="poly-22" d="M361.162,180.157l212.71,43.382l121.894-97.113L466.863,69.137L361.162,180.157z"/>
+			<path fill="#FFFFFF" id="poly-21" d="M357.708,177.865L462.204,67.649L357.342,38.135l-120.981,69.96L357.708,177.865z"/>
+			<path fill="#FFFFFF" id="poly-20" d="M353.581,180.157l-122.757-70.095l-236.081-2.406l119.759,86.57L353.581,180.157z"/>
+			<path fill="#FFFFFF" id="poly-19" d="M108.24,194.86l-164.745-16.154l-99.519-71.127h144.467L108.24,194.86z"/>
+			<path fill="#FFFFFF" id="poly-18" d="M-61.086,179.674l-107.152,105.501L-284.221,213.8l125.906-103.93L-61.086,179.674z"/>
+			<path fill="#FFFFFF" id="poly-17" d="M-343.082,240.86l51.643-26.587l-51.639-47.143L-343.082,240.86z"/>
+			<path fill="#FFFFFF" id="poly-16" d="M1069.5-74.5l-73.36,90.125l24.776,270.586l8.722,95.234L1069.5-74.5z"/>
+			<path fill="#FFFFFF" id="poly-15" d="M991.541,14.086L1005.251,0L1042-49l-91-10.5L991.541,14.086z"/>
+			<path fill="#FFFFFF" id="poly-14" d="M921.422,102.921L988.25,15.68L949-57.5l-128.5,4L921.422,102.921z"/>
+			<path fill="#FFFFFF" id="poly-13" d="M759.809,142.428L714.176,20.529L835.5-25.5l12.683,25.216l69.036,104.922L759.809,142.428z"/>
+			<path fill="#FFFFFF" id="poly-12" d="M829-31L711.004,17.359L675.236,1.357L829-31z"/>
+			<path fill="#FFFFFF" id="poly-11" d="M700.578,124.097L648.489-7.1l62.515,29.272l44.031,120.256L700.578,124.097z"/>
+			<path fill="#FFFFFF" id="poly-10" d="M468.312,66.085L628-47l19.24,47.233l48.643,123.099L468.312,66.085z"/>
+			<path fill="#FFFFFF" id="poly-9" d="M463.616,64.404l31.22-64.933L621-46L463.616,64.404z"/>
+			<path fill="#FFFFFF" id="poly-8" d="M360.038,35.041l100.486,27.071l26.481-59.834L368.531-0.887L360.038,35.041z"/>
+			<path fill="#FFFFFF" id="poly-7" d="M232.391,105.442L251.102,2.278L363.135-3.42l-7.834,38.424L232.391,105.442z"/>
+			<path fill="#FFFFFF" id="poly-6" d="M228.303,104.509L245.879,2.278l-43.502-4.015L228.303,104.509z"/>
+			<path fill="#FFFFFF" id="poly-5" d="M-6.098,102.919L-26.003,2.28L31.5-19.5L197.791,0.709l27.267,105.571L-6.098,102.919z"/>
+			<path fill="#FFFFFF" id="poly-4" d="M-9.915,102.521L-31.556,2.28l-2.456-11.383l-75.534,10.762L-9.915,102.521z"/>
+			<path fill="#FFFFFF" id="poly-3" d="M-13.429,103.647L-117.408-0.931l-173.306-1.966l133.471,106.583L-13.429,103.647z"/>
+			<path fill="#FFFFFF" id="poly-2" d="M-288.231,212.593l127.508-107.268L-290.027,2.504l-53.055,57.312L-394.5,107.5l51.417,53.441
+				L-288.231,212.593z"/>
+			<path fill="#FFFFFF" id="poly-1" d="M-455.5,161.5L-292.278,1.003L-484.5-5.5L-455.5,161.5z"/>
+			
+		</g>
+	
+	</g>
+	<g id="allvideos" display="none">
+		<polygon fill="#F3AB9A"  points="1006.5,-90.5 1050.5,30.5 1130.5,-118.5 		"/>
+		<polygon fill="#F3AB9A"  points="1136.5,-112.5 1053.5,41.5 1049.5,255.5 1164.5,86.5 		
+			"/>
+		<polygon fill="#F3AB9A"  points="1051.5,269.5 1168.5,95.5 1175.5,340.5 1058.5,407.5 
+			1051.5,408.5 		"/>
+		<polygon fill="#F3AB9A"  points="1060.5,417.5 1030.5,549.5 1171.5,465.5 		"/>
+		<polygon fill="#F3AB9A"  points="1064.5,412.5 1226.5,317.5 1191.5,466.5 		"/>
+		<polygon fill="#F3AB9A"  points="1031.5,554.5 1177.5,472.5 1236.5,498.5 1016.5,629.5 		
+			"/>
+		<polygon fill="#F3AB9A"  points="1016.5,636.5 1011.5,664.5 1268.5,630.5 1235.5,507.5 		
+			"/>
+		<polygon fill="#F3AB9A"  points="1027.5,718.5 1145.5,659.5 1264.5,646.5 1118.5,892.5 
+			1027.5,915.5 		"/>
+		<polygon fill="#F3AB9A"  points="1175.5,102.5 1181.5,333.5 1257.5,287.5 		"/>
+		<polygon fill="#F3AB9A"  points="1142.5,-108.5 1161.5,4.5 1243.5,-80.5 		"/>
+		<polygon fill="#F3AB9A"  points="1162.5,11.5 1173.5,86.5 1251.5,74.5 		"/>
+		<polygon fill="#F3AB9A"  points="1173.5,2.5 1285.5,-88.5 1263.5,70.5 		"/>
+		<polygon fill="#F3AB9A"  points="1177.5,95.5 1261.5,275.5 1291.5,77.5 		"/>
+		<polygon fill="#F3AB9A"  points="1237.5,312.5 1198.5,466.5 1266.5,496.5 		"/>
+		<polygon fill="#F3AB9A"  points="1240.5,507.5 1274.5,625.5 1282.5,502.5 		"/>
+		<polygon fill="#F3AB9A"  points="-443.833,-57.5 -386.833,65.833 -515.833,77.167 		"/>
+		<polygon fill="#F3AB9A"  points="-394.167,183.833 -346.833,240.167 -345.5,406.167 
+			-449.833,203.833 		"/>
+		<polygon fill="#F3AB9A"  points="-402,182 -518,84 -507.5,216.5 		"/>
+		<polygon fill="#F3AB9A"  points="-501.5,219 -453,205 -351.5,404.5 -396.5,433 		"/>
+		<polygon fill="#F3AB9A"  points="-349.5,407 -392.5,437 -345.5,485 		"/>
+		<polygon fill="#F3AB9A"  points="-395,440.5 -467.5,514 -347.5,486.5 		"/>
+		<polygon fill="#F3AB9A"  points="-344.5,490.5 -465,520.5 -398,660 		"/>
+		<polygon fill="#F3AB9A"  points="-467.5,523 -402.5,660 -473,689.5 		"/>
+		<polygon fill="#F3AB9A"  points="-472,697 -386.5,708 -348.5,765 		"/>
+		<polygon fill="#F3AB9A"  points="-209,781 -334.5,770 -212,904.5 -205,781.5 		"/>
+		<polygon fill="#F3AB9A"  points="-354.5,767 -470.5,703.5 -450.5,832.5 		"/>
+		<polygon fill="#F3AB9A"  points="-346,768.5 -274.5,842.5 -443,835 -348.5,768 		"/>
+		<polygon fill="#F3AB9A"  points="-272.5,848 -216.5,906 -481.5,913.5 -440,838.5 		"/>
+		<polygon fill="#F3AB9A"  points="-509.5,226.5 -407.5,440.5 -467.5,500.5 		"/>
+		<path id="_x30_1" display="inline" fill="#EC7D70" d="M389.897,393.832l-3.214-113.057l-245.558-60.836l13.498,230.269
+			L389.897,393.832z"/>
+		<path id="null" display="inline" fill="#EC7D70" d="M394.414,394.627l-3.176-113.056l130.22-58.176l1.587,217.178L394.414,394.627
+			z"/>
+		<path class="trigger" display="inline" fill="#E6473E" d="M392.826,397.008l130.219,46.848l-242.173,97.666l-123.074-88.137 L392.826,397.008z"/>
+		<path class="trigger" display="inline" fill="#E6473E" d="M521.458,215.969l137.364-58.757l-149.275-18.263l-147.185,41.288 		L521.458,215.969z"/>
+		<path class="trigger" display="inline" fill="#E6473E" d="M527.717,438.986V224.8l128.159,31.408v124.125L527.717,438.986z"/>
+		<path id="null_4_" display="inline" fill="none" d="M527.717,438.986V224.8l128.159,31.408v124.125L527.717,438.986z"/>
+		<path id="null_5_" display="inline" fill="#EC7D70" d="M661.958,381.021l118.311,34.145l2.382-208.037l-119.898,49.546
+			L661.958,381.021z"/>
+		<path id="null_6_" display="inline" fill="#EC7D70" d="M530.191,442.477l130.973-57.486l119.898,34.831l-121.486,68.394
+			L530.191,442.477z"/>
+		<path class="trigger" display="inline" fill="#E6473E" d="M666.859,488.32l118.173-67.227l128.278-5.928l-72.123,70.774
+			L666.859,488.32z"/>
+		<path id="null_8_" display="inline" fill="none" d="M666.859,488.32l118.173-67.227l128.278-5.928l-72.123,70.774L666.859,488.32z
+			"/>
+		<path class="trigger" display="inline" fill="#E6473E" d="M657.953,489.979l-70.668,121.484L457.86,590.82l72.484-145.594
+			L657.953,489.979z"/>
+		<path class="trigger" display="inline" fill="#E6473E" d="M283.254,547.479l238.252-97.271l-70.715,138.954l-231.853,86.121
+			L283.254,547.479z"/>
+		<path id="null_11_" display="inline" fill="none" d="M283.254,547.479l238.252-97.271l-70.715,138.954l-231.853,86.121
+			L283.254,547.479z"/>
+		<path id="null_12_" display="inline" fill="#EC7D70" d="M276.108,544.697l-64.315,127.838L97.454,566.929l56.375-110.368
+			L276.108,544.697z"/>
+		<path id="null_13_" display="inline" fill="none" d="M276.108,544.697l-64.315,127.838L97.454,566.929l56.375-110.368
+			L276.108,544.697z"/>
+		<path id="null_14_" display="inline" fill="#EC7D70" d="M91.896,566.929l56.375-111.164l-181.832,38.908l-65.5,129.907
+			L91.896,566.929z"/>
+		<path id="null_15_" display="inline" fill="#F3AB9A" d="M87.925,571.892L-29.591,712.237l-122.28-12.707l51.612-71.462
+			L87.925,571.892z"/>
+		<path id="null_16_" display="inline" fill="#F3AB9A" d="M91.101,574.074l58.758,222.327L18.052,905.289l-42.879-191.467
+			L91.101,574.074z"/>
+		<path id="null_17_" display="inline" fill="#F3AB9A" d="M93.482,570.305l59.553,220.697l95.88,34.167l-37.121-144.694
+			L93.482,570.305z"/>
+		<path class="trigger" id="null_18_" display="inline" fill="#EC7D70" d="M360.271,177.202l140.938-39.048l-123.47-86.959l-95.28,39.318
+			L360.271,177.202z"/>
+		<path class="trigger" id="null_19_"  display="inline" fill="#E6473E" d="M149.858,448.621l-11.116-227.887l-159.597,76.761l4.763,116.188
+			L149.858,448.621z"/>
+		<path id="null_20_" display="inline" fill="none" d="M149.858,448.621l-11.116-227.887l-159.597,76.761l4.763,116.188
+			L149.858,448.621z"/>
+		<path class="trigger" id="null_21_" display="inline" fill="#E6473E" d="M-17.679,417.652l169.126,34.144l-183.822,40.091l-84.96-50.819 L-17.679,417.652z"/>
+		<path id="null_22_" display="inline" fill="#F3AB9A" d="M463.055,596.704l123.075,19.851l84.36,173.301l-124.262-54.832
+			L463.055,596.704z"/>
+		<path class="trigger" display="inline" fill="#E6473E" d="M662.465,154.16l-37.784-89.452l102.894-4.779l54.788,140.542
+			L662.465,154.16z"/>
+		<path id="null_24_" display="inline" fill="#F3AB9A" d="M658.26,154.035l-151.095-17.866l-63.3-122.279L619.52,66.281
+			L658.26,154.035z"/>
+		<path id="null_25_" display="inline" fill="#EC7D70" d="M-20.855,413.683l-3.971-117.239l-138.16-26.483l44.466,167.437
+			L-20.855,413.683z"/>
+		<path id="null_26_" display="inline" fill="#F3AB9A" d="M786.852,417.061l108.377-110.565l149.523-45.536L916.302,410.9
+			L786.852,417.061z"/>
+		<path id="null_27_" display="inline" fill="#F3AB9A" d="M918.541,415.271l133.432-0.296l-96.186,136.867L846.62,487.421
+			L918.541,415.271z"/>
+		<path class="trigger" display="inline" fill="#E6473E" d="M783.579,415.959L891.566,303.5l3.177-206.447l-107.987,108.78
+			L783.579,415.959z"/>
+		<path class="trigger" display="inline" fill="#E54332" d="M356.302,178.646L278.49,92.103l-123.072,35.73l-12.706,86.547
+			L356.302,178.646z"/>
+		<path id="null_30_" display="inline" fill="none" d="M356.302,178.646L278.49,92.103l-123.072,35.73l-12.706,86.547
+			L356.302,178.646z"/>
+		<path id="null_31_" display="inline" fill="#F3AB9A" d="M216.557,683.727l238.202-89.328l-8.733,155.786l-191.357,70.511
+			L216.557,683.727z"/>
+		<path class="trigger" id="null_32_" display="inline" fill="#E6473E" d="M-102.64,621.718l64.316-127.839l-132.603,20.646l-56.534,95.282
+			L-102.64,621.718z"/>
+		<path id="null_33_" display="inline" fill="#F3AB9A" d="M16.463,217.837l18.659-89.211L-166.956,72.25l34.936,71.897
+			L16.463,217.837z"/>
+		<path id="null_34_" display="inline" fill="#EC7D70" d="M591.029,612.536l70.668-120.692l179.449-2.383l-81.784,105.604
+			L591.029,612.536z"/>
+		<path id="null_35_" display="inline" fill="#EC7D70" d="M14.875,221.013l-146.853-73.273l-154.608,21.779l123.642,96.807
+			L14.875,221.013z"/>
+		<path id="null_36_" display="inline" fill="#F3AB9A" d="M449.996,754.156l7.941-159.758l82.576,140.541l-5.559,138.269
+			L449.996,754.156z"/>
+		<path id="null_37_" display="inline" fill="#F3AB9A" d="M787.058,198.883L891.869,93.278L844.229-30.589L732.271,59.929
+			L787.058,198.883z"/>
+		<path id="null_38_" display="inline" fill="none" d="M787.058,198.883L891.869,93.278L844.229-30.589L732.271,59.929
+			L787.058,198.883z"/>
+		<path class="trigger" display="inline" fill="#E54332" d="M843.79,490.255l-80.562,107.989l109.981,79.422l80.991-121.659
+			L843.79,490.255z"/>
+		<path id="null_40_" display="inline" fill="none" d="M843.79,490.255l-80.562,107.989l109.981,79.422l80.991-121.659
+			L843.79,490.255z"/>
+		<path class="trigger" id="null_41_" display="inline" fill="#E54332" d="M-122.491,437.769l-43.959-167.014l-105.716,44.873l35.346,131.022
+			L-122.491,437.769z"/>
+		<path id="null_42_" display="inline" fill="#EC7D70" d="M596.369,616.273l161.443-16.789l112.098,81.898l-162.65,29.663
+			L596.369,616.273z"/>
+		<path id="null_43_" display="inline" fill="#F3AB9A" d="M670.558,769.35l-80.541-153.871l176.817,153.854l-40.5,0.167
+			L670.558,769.35z"/>
+		<path id="null_44_" display="inline" fill="#F3AB9A" d="M7.313,904.696l-35.518-188.102l-173.688,66.309l-5.558,122.386
+			L7.313,904.696z"/>
+		<path id="null_45_" display="inline" fill="#F3AB9A" d="M-472.655,693.18l186.396,16.674l180.435-84.664l-125.606-12.395
+			L-472.655,693.18z"/>
+		<path id="null_46_" display="inline" fill="#F3AB9A" d="M-285.266,714.618l181.037-87.344l-51.612,69.875l-181.831,68.286
+			L-285.266,714.618z"/>
+		<path id="null_47_" display="inline" fill="#F3AB9A" d="M895.837,301.924l2.88-204.276l145.602-57.278l-0.794,215.396
+			L895.837,301.924z"/>
+		<path id="null_48_" display="inline" fill="#F3AB9A" d="M878.237,682.543l128.634-10.803l129.629-15.906L929.68,755.907
+			L878.237,682.543z"/>
+		<path id="null_49_" display="inline" fill="#F3AB9A" d="M-389.284,181.826l97.933-11.509l124.395,97.101l-107.686,46.374
+			L-389.284,181.826z"/>
+		<path class="trigger" display="inline" fill="#E54332" d="M-161.398,267.86l138.955,25.393l158.803-75.771l-117.516,5.913
+			L-161.398,267.86z"/>
+		<path class="trigger" id="null_50_" display="inline" fill="#EC7D70" d="M-170.926,510.819l132.601-20.117l-83.371-49.225l-114.944,8.534
+			L-170.926,510.819z"/>
+		<path id="null_51_" display="inline" fill="#EC7D70" d="M357.3,182.621l163.868,37.242l-132.105,58.039l-244.762-59.665
+			L357.3,182.621z"/>
+		<path class="trigger" display="inline" fill="#E54332" d="M527.064,216.764L664.746,158.8l114.726,44.847l-116.315,47.75
+			L527.064,216.764z"/>
+		<path id="null_53_" display="inline" fill="#F3AB9A" d="M-241.405,449.616l65.713,61.997l-165.156-26.469l-5.293-75.166
+			L-241.405,449.616z"/>
+		<path display="inline" fill="#F3AB9A" d="M-340.545,408.203l98.951,37.927l-34.35-128.868l-67.387-75.207
+			L-340.545,408.203z"/>
+		<path id="null_54_" display="inline" fill="#F3AB9A" d="M-337.673,489.46l161.981,25.329l-54.945,93.961l-162.131,53.46
+			L-337.673,489.46z"/>
+		<path id="null_55_" display="inline" fill="#F3AB9A" d="M-323.248,765.435l167.407-63.124l122.09,12.338l-165.797,61.126
+			L-323.248,765.435z"/>
+		<path id="null_56_" display="inline" fill="#F3AB9A" d="M-383.02,706.659l96.398,5.878l-57.404,52.897L-383.02,706.659z"/>
+		<path id="null_57_" display="inline" fill="#F3AB9A" d="M772.479,769.358l-63.16-53.85l163.768-32.651l56.5,81.056
+			L772.479,769.358z"/>
+		<path display="inline" fill="#F3AB9A" d="M875.076,679.253c3.704-3.179,81.678-121.058,81.678-121.058l66.804-5.822
+			l-19.057,115.396L875.076,679.253z"/>
+		<path id="null_58_" display="inline" fill="#F3AB9A" d="M1047.89,411.859H919.385l124.934-142.945L1047.89,411.859z"/>
+		<path id="null_59_" display="inline" fill="#F3AB9A" d="M1051.973,425.184l-93.645,129.785l64.638-5.556L1051.973,425.184z"/>
+		<path id="null_60_" display="inline" fill="#F3AB9A" d="M932.544,758.786L1024,717.834l0.833,50.166l-85.666,1.501
+			L932.544,758.786z"/>
+		<path id="null_61_" display="inline" fill="#F3AB9A" d="M545.411,740.309l112.003,49.547l97.207,145.084l-212.626-74.702
+			L545.411,740.309z"/>
+		<path id="null_62_" display="inline" fill="#F3AB9A" d="M257.775,826.899l187.13-70.825l85.288,116.46l-222.326,48.421
+			L257.775,826.899z"/>
+		<path class="trigger" id="null_63_" display="inline" fill="#EC7D70" d="M20.433,220.218l117.515-5.838l13.499-86.547l-112.752,1.588
+			L20.433,220.218z"/>
+		<path id="null_64_" display="inline" fill="#F3AB9A" d="M-166.956,69.473L39.489,125.45h111.165L-59.764,34.932L-166.956,69.473z"
+			/>
+		<path id="null_65_" display="inline" fill="#F3AB9A" d="M-62.568,31.944l-107.66,34.157l-204.857,11.911l117.515-40.496
+			L-62.568,31.944z"/>
+		<path id="null_66_" display="inline" fill="#F3AB9A" d="M-135.459,145.044l-36.261-75.175L-376.579,81.78l87.343,85.362
+			L-135.459,145.044z"/>
+		<path id="null_67_" display="inline" fill="#F3AB9A" d="M-515.678,79.906l118.656-11.509l104.263,99.173l-108.278,11.737
+			L-515.678,79.906z"/>
+		<path id="null_68_" display="inline" fill="#F3AB9A" d="M1044.454,33.344L897.561,93.689L849.123-29.384l153.248-65.11
+			L1044.454,33.344z"/>
+		<path id="null_69_" display="inline" fill="#F3AB9A" d="M732.271,56.054l104.811-84.658L828.5-76.167l-41.442-51.294
+			L732.271,56.054z"/>
+		<path id="null_70_" display="inline" fill="#F3AB9A" d="M729.094,56.148l47.643-187.58l-134.189-97.664l-25.41,141.335
+			L729.094,56.148z"/>
+		<path id="null_71_" display="inline" fill="#F3AB9A" d="M725.824,56.847l-103.713,3.674l-176.405-181.84L609.195-83.79
+			L725.824,56.847z"/>
+		<path id="null_72_" display="inline" fill="#F3AB9A" d="M457.86,13.89L619.52,62.311L470.64-86.569l-35.73-49.214L457.86,13.89z"
+			/>
+		<path id="null_73_" display="inline" fill="#F3AB9A" d="M379.327,48.743l124.266,87.824L417.441-21.444L307.868-94.495
+			L379.327,48.743z"/>
+		<path id="null_74_" display="inline" fill="#F3AB9A" d="M376.945,48.743L278.49,88.131L191.148-35.737l107.193-58.758
+			L376.945,48.743z"/>
+		<path id="null_75_" display="inline" fill="#F3AB9A" d="M276.108,88.927L184-34.147L22.021-37.324L156.21,123.862L276.108,88.927z
+			"/>
+		<path id="null_76_" display="inline" fill="#F3AB9A" d="M-59.6,31.177l210.253,91.097L14.875-35.737l-180.323-58.758L-59.6,31.177
+			z"/>
+		<path id="null_77_" display="inline" fill="#F3AB9A" d="M-255.604,33.331l189.012-4.579l-98.856-123.248h-165.871L-255.604,33.331
+			z"/>
+		<path id="null_78_" display="inline" fill="#F3AB9A" d="M-442.137-61.621l118.656-11.509l64.323,107.463L-376.91,76.266
+			L-442.137-61.621z"/>
+	</g>
+	<g id="autoportrait" >
+		<!-- Background -->
+		<path id="background_1_" display="none" fill="#FFFFFF" d="M-123.919,124.044l19.688,365.207l-19.688,152.4l438.364,30.411
+			l416.586-30.411l-17.229-348.606l17.229-169.001l-418.128-24.007L-123.919,124.044z"/>
+
+		<!-- Close -->
+		<g class="close-auto">
+			<line x1="700" y1="131" x2="720" y2="150" style="stroke:rgb(0,0,0);stroke-width:5"></line>
+			<line x1="700" y1="150" x2="720" y2="131" style="stroke:rgb(0,0,0);stroke-width:5"></line>
+		</g>
+
+		<!-- Titles -->
+		<text data-module="2" class="auto-title step-home auto-step">
+			<tspan x="-95" y="180">Réalisez votre autoportrait</tspan>
+			<tspan x="-95" y="220">en référence à l'univers de Picasso</tspan>
+		</text>
+
+		<text data-module="2" class="auto-title auto-step step-interactive">
+			<tspan x="-95" y="180">Choisissez votre transformation</tspan>
+		</text>
+
+		<text data-module="2" class="auto-title auto-step step-end">
+			<tspan x="-95" y="180">Partagez votre autoportrait</tspan>
+		</text>
+
+		<text data-module="2" class="auto-title auto-step step-gallery">
+			<tspan x="-95" y="180">Galerie des autoportraits</tspan>
+		</text>
+
+		<!-- Home pic -->
+		<image class="auto-step step-home home-image" xlink:href="{{baseurl}}img/autoportrait/intro.jpg" preserveAspectRatio="xMidYMid" x="-95" y="240" width="480" height="350"> </image>
+
+		<!-- Right Side buttons  -- HOME -->
+		<g class="auto-button auto-step step-home button-webcam">
+			<rect width="20" height="20" x="405" y="240"></rect>
+			<text>
+				<tspan x="445" y="257">Activer votre Webcam</tspan>
+			</text>
+		</g>
+
+		<g class="auto-button auto-step step-home button-photo">
+			<rect width="20" height="20" x="405" y="300"></rect>
+			<text>
+				<tspan x="445" y="318">Télécharger une de vos</tspan>
+				<tspan x="445" y="338">photos</tspan>
+			</text>
+		</g>
+
+		<g class="auto-button auto-step step-home button-facebook">
+			<rect width="20" height="20" x="405" y="360"></rect>
+			<text>
+				<tspan x="445" y="380">Récupérez une de vos</tspan>
+				<tspan x="445" y="405">photos sur Facebook</tspan>
+			</text>
+		</g>
+
+		<!-- Right side Button INTERACTIVE -->
+		<g class="auto-button auto-step step-interactive button-step1">
+			<rect width="20" height="20" x="405" y="240"></rect>
+			<text>
+				<tspan x="445" y="257">De la forme aux traits</tspan>
+			</text>
+		</g>
+
+		<g class="auto-button auto-step step-interactive button-step2">
+			<rect width="20" height="20" x="405" y="300"></rect>
+			<text>
+				<tspan x="445" y="318">Vers l'épure</tspan>
+			</text>
+		</g>
+
+		<g class="auto-button auto-step step-interactive button-step3">
+			<rect width="20" height="20" x="405" y="360"></rect>
+			<text>
+				<tspan x="445" y="380">Un seul trait</tspan>
+			</text>
+		</g>
+
+		<g class="auto-button button-validate auto-step step-interactive button-interactive-validate">
+			<rect width="100" height="50" x="405" y="410"></rect>
+			<text>
+				<tspan x="416" y="432">Valider votre</tspan>
+				<tspan x="420" y="453">autoportrait</tspan>
+			</text>
+		</g>
+
+		<!-- Right side Button END -->
+		<g class="auto-button auto-step step-end">
+			<rect width="20" height="20" x="405" y="240"></rect>
+			<text>
+				<tspan x="445" y="257">Partagez</tspan>
+			</text>
+		</g>
+
+		<g class="auto-button auto-step step-end button-save">
+			<rect width="20" height="20" x="405" y="330"></rect>
+			<text>
+				<tspan x="445" y="348">Sauvegardez</tspan>
+				<tspan x="445" y="373">votre autoportrait</tspan>
+			</text>
+		</g>
+
+		<g class="auto-button auto-step step-end button-addgallery">
+			<rect width="20" height="20" x="405" y="390"></rect>
+			<text>
+				<tspan x="445" y="420">Ajouter votre autoportrait</tspan>
+				<tspan x="445" y="445">à la galerie</tspan>
+			</text>
+		</g>
+
+		<!-- END SHARE -->
+		<g class="share-button auto-step step-end button-share-facebook">
+			<rect width="40" height="40" x="444" y="270"></rect>
+			<image xlink:href="{{baseurl}}img/social/auto-facebook.png" preserveAspectRatio="xMidYMid" x="455" y="270" width="23" height="37"> </image>
+		</g>
+		<g class="share-button auto-step step-end button-share-twitter">
+			<rect width="40" height="40" x="494" y="270"></rect>
+			<image xlink:href="{{baseurl}}img/social/auto-tuite.png" preserveAspectRatio="xMidYMid" x="496" y="275" width="36" height="29"> </image>
+		</g>
+		<g class="share-button auto-step step-end button-share-google">
+			<rect width="40" height="40" x="544" y="270"></rect>
+			<image xlink:href="{{baseurl}}img/social/auto-google.png" preserveAspectRatio="xMidYMid" x="546" y="275" width="36" height="30"> </image>
+		</g>
+
+		<g class="auto-button button-validate auto-step step-end button-end-retry">
+			<rect width="100" height="50" x="405" y="480"></rect>
+			<text>
+				<tspan x="423" y="510">Réessayer</tspan>
+			</text>
+		</g>
+
+
+
+
+	</g>
+	<g id="info-layer" display="none">
+		<path id="info-layer-background" fill="#1A171B" d="M-124.499,109.735l-167.024,225.687l15.288,211.228l151.736,117.194
+			l469.278,32.555l445.963-32.555l-18.443-373.192l18.443-180.917L343.127,84.036L-124.499,109.735z"/>
+		<g class="close-info-layer">
+			<rect x="745" y="115" width="33" height="33" fill="red"></rect>
+			<line x1="750" y1="120" x2="774" y2="144" style="stroke:rgb(255,255,255);stroke-width:5"></line>
+			<line x1="750" y1="144" x2="774" y2="120" style="stroke:rgb(255,255,255);stroke-width:5"></line>
+		</g>
+
+		<g class="info-layer-content module2">
+			<text data-module="2" class="info-layer-left-text">
+				<tspan x="15" y="190">Cet autoportrait</tspan>
+				<tspan x="27" y="215">est élaboré en</tspan>
+				<tspan x="-5" y="240">référence à l'étude</tspan>
+				<tspan x="36" y="265">des taureaux</tspan>
+				<tspan x="45" y="290">réalisée par</tspan>
+				<tspan x="70" y="315">Picasso.</tspan>
+			</text>
+			<image class="info-layer-module2-image" data-module="0" xlink:href="{{baseurl}}img/autoportrait/info.jpg" preserveAspectRatio="none" x="150" y="170" width="567" height="401"></image>
+		</g>
+
+		<!-- MODULE 3 -->
+		<g class="info-layer-content module3">
+			<text data-module="3" class="info-layer-left-text module3">
+				<tspan x="55" y="170">Le geste</tspan>
+				<tspan x="31" y="205">de Picasso</tspan>
+				<tspan x="44" y="240">réinventé</tspan>
+			</text>
+		</g>
+
+		<image class="info-layer-module-image module3" xlink:href="{{baseurl}}img/infolayer/01-collage.jpg" preserveAspectRatio="xMidYMid" x="150" y="150" width="567" height="280"></image>
+		<image class="info-layer-module-image module3" xlink:href="{{baseurl}}img/infolayer/02-variation.jpg" preserveAspectRatio="xMidYMid" x="150" y="150" width="567" height="280"></image>
+		<image class="info-layer-module-image module3" xlink:href="{{baseurl}}img/infolayer/03-recuperation.jpg" preserveAspectRatio="xMidYMid" x="150" y="150" width="567" height="280"></image>
+		<image class="info-layer-module-image module3" xlink:href="{{baseurl}}img/infolayer/04-mots.jpg" preserveAspectRatio="xMidYMid" x="150" y="150" width="567" height="280"></image>
+		<image class="info-layer-module-image module3" xlink:href="{{baseurl}}img/infolayer/05-aplat.jpg" preserveAspectRatio="xMidYMid" x="150" y="150" width="567" height="280"></image>
+		<image class="info-layer-module-image module3" xlink:href="{{baseurl}}img/infolayer/06-trait.png" preserveAspectRatio="xMidYMid" x="150" y="150" width="567" height="280"></image>
+
+	</g>
+</g>
+
+<g id="interactive_layers">
+
+	<!--
+		 HOME 
+	-->
+	<image class="svgelement isvisible mainpage-title" data-module="0" xlink:href="{{baseurl}}img/main-logo.png" preserveAspectRatio="none" x="150" y="250" width="389" height="270"></image>
+
+	<image class="svgelement mainpage-subtitle" data-module="0" xlink:href="{{baseurl}}img/main-subtitle.png" preserveAspectRatio="none" x="340" y="505" width="180" height="108"></image>
+
+	<a data-module="0" xlink:href="http://www.arte.fr" class="mainpage-link-special svgelement" target="_blank">
+		<text>
+			<tspan x="-317" y="106">Picasso</tspan>
+			<tspan x="-332" y="135"> à l'antenne</tspan>
+		</text>
+	</a>
+
+	<a data-module="0" xlink:href="http://boutique.arte.tv/" class="mainpage-link-boutique svgelement" target="_blank">
+		<text>
+			<tspan x="-320" y="267">Picasso</tspan>
+			<tspan x="-320" y="290">sur ARTE boutique</tspan>
+		</text>
+	</a>
+
+	<text class="mainpage-choose-button svgelement" data-module="0" x="784.081" y="218">
+		<tspan x="784" y="218" dy="0">Choisir</tspan>
+	</text>
+	
+	<g class="mainpage-validate-button svgelement" data-module="0">
+		<circle cx="695" cy="180" r="23" />
+		<text x="678" y="186">Valider</text>
+	</g>
+
+	<!-- Texts Intro -->
+	<g class="mainpage-selector-item item1 svgelement" data-module="0">
+		<text class="title" x="425" y="132">Si Picasso était...</text>
+		<line x1="425" y1="140" x2="650" y2="140" style="stroke:rgb(0,0,0);stroke-width:2"></line>
+		<text x="425" y="161">10 courts-métrages sur la présence</text>
+		<text x="425" y="180">de Picasso dans notre imaginaire</text>
+	</g>
+
+	<g class="mainpage-selector-item item2 svgelement" data-module="0">
+		<text class="title" x="425" y="132">Si Picasso me dessinait</text>
+		<line x1="425" y1="140" x2="650" y2="140" style="stroke:rgb(0,0,0);stroke-width:2"></line>
+		<text x="425" y="161">Un programme pour créer</text>
+		<text x="425" y="180">et partager votre portrait</text>
+	</g>
+
+	<g class="mainpage-selector-item item3 svgelement" data-module="0">
+		<text class="title" x="425" y="132">Si Picasso m'était réinventé</text>
+		<line x1="425" y1="140" x2="650" y2="140" style="stroke:rgb(0,0,0);stroke-width:2"></line>
+		<text x="425" y="161">De jeunes artistes réinterprètent les</text>
+		<text x="425" y="180">gestes de Picasso</text>
+	</g>
+
+	<!-- Numbers Intro -->
+	<defs><clipPath id="clippathnumber">
+        <rect x="590" y="230" width="40" height="90"></rect>
+    </clipPath></defs>
+	<image class="svgelement mainpage-number number-01" data-module="0" xlink:href="{{baseurl}}img/number1.png" preserveAspectRatio="none" x="590" y="320" width="27" height="88" style="clip-path: url(#clippathnumber);"></image>
+	<image class="svgelement mainpage-number number-02" data-module="0" xlink:href="{{baseurl}}img/number2.png" preserveAspectRatio="none" x="590" y="320" width="40" height="77" style="clip-path: url(#clippathnumber);"></image>
+	<image class="svgelement mainpage-number number-03 active" data-module="0" xlink:href="{{baseurl}}img/number3.png" preserveAspectRatio="none" x="590" y="230" width="40" height="89" style="clip-path: url(#clippathnumber);"></image>
+	
+
+	<!-- /END HOME -->
+
+	<!-- MODULE 1 -->
+	<text data-module="1" class="info-left svgelement">
+		<tspan x="-234" y="360">10 courts-</tspan>
+		<tspan x="-248" y="380">métrages sur</tspan>
+		<tspan x="-253" y="400">la présence de</tspan>
+		<tspan x="-246" y="420">Picasso dans</tspan>
+		<tspan x="-265" y="440">notre imaginaire</tspan>
+	</text>
+
+	<!-- MODULE 2 -->
+	<text data-module="2" class="info-left svgelement isactivable">
+		<tspan x="-261" y="357">Cet autoportrait</tspan>
+		<tspan x="-253" y="373">est élaboré en</tspan>
+		<tspan x="-275" y="388">référence à l'étude</tspan>
+		<tspan x="-246" y="403">des taureaux</tspan>
+		<tspan x="-240" y="418">réalisée par</tspan>
+		<tspan x="-226" y="435">Picasso.</tspan>
+		<tspan x="-215" y="460" class="bigger">Voir +</tspan>
+	</text>
+	<text data-module="2" class="info-right svgelement isactivable" fill="#FFF">
+		<tspan x="805" y="337">Découvrir la</tspan>
+		<tspan x="805" y="367">Galerie complète</tspan>
+	</text>
+	
+	
+	<!-- MODULE 3 -->
+	<text data-module="3" class="info-left svgelement isactivable">
+		<tspan x="-234" y="360">Le geste de</tspan>
+		<tspan x="-268" y="380">Picasso réinventé</tspan>
+		<tspan x="-215" y="460" class="bigger">Voir +</tspan>
+	</text>
+
+	<!-- COMMON -->
+	<text data-module="1|3" class="see-all-button svgelement" x="817.889" y="620">
+		<tspan x="817" y="620" dy="0">Découvrir</tspan>
+		<tspan x="817" y="620" dy="26">tous les films</tspan>
+	</text>
+
+	<image class="home-link svgelement" data-module="1|2|3|4" xlink:href="{{baseurl}}img/logo-back.png" preserveAspectRatio="none" x="760" y="52" width="100" height="30"></image>
+
+</g>
+
+</svg>

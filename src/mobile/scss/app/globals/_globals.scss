@@ -1,0 +1,64 @@
+html, body{
+    @include economica;
+    @include square(100%);
+    overflow: hidden;
+}
+a{
+    color: #000;
+}
+
+.background-allvideos{
+    @include position(absolute, 0px 0 0 0px);
+    @include square(100%);
+    background: #FFF;
+}
+
+.backgrounds{
+    @include position(absolute, 0px 0 0 0px);
+    z-index: 1;
+    @include square(100%);
+
+    &.home{
+        background: url('../../img/mobile/bg/bg-home.png') center center;
+        background-size: cover;
+    }
+
+    &.module1{
+        background: url('../../img/mobile/bg/bg-module1.png') center center;
+        background-size: cover;
+    }
+
+    &.module2{
+        background: url('../../img/mobile/bg/bg-module2.png') center center;
+        background-size: cover;
+    }
+
+    &.module3{
+        background: url('../../img/mobile/bg/bg-module3.png') center center;
+        background-size: cover;
+    }
+
+    &.allvideos{
+        background: url('../../img/mobile/bg/bg-allvideos.png') center center;
+        background-size: cover;
+    }
+}
+
+// WARNING
+#warning-message { 
+    display: none;
+    font-weight: bold;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 200px;
+}
+@media only screen and (min-device-width : 0px) 
+and (max-device-width : 1024px) and (orientation:portrait){
+    .content-wrapper, .footer, .menumain, .menu-left-button, .backgrounds { display:none; }
+    #warning-message { display:block; }
+}
+@media only screen and (min-device-width : 0px) 
+and (max-device-width : 1024px) and (orientation:landscape){
+    #warning-message { display:none; }
+    .content-wrapper, .footer, .menumain, .menu-left-button, .backgrounds { display:block; }
+}

@@ -1,0 +1,17 @@
+<div class="content-wrapper">
+
+    {% include 'content/content.html' %}
+
+    <div id="svg">
+        {% include 'svg/bgpath-' ~ lang ~ '.svg' %}
+        
+    </div> 
+    <div id="svgclip">
+        {% include 'svg/clip.svg' %}
+    </div>
+    
+</div>
+
+{% include 'footer.html' %}
+
+<div id="warning-message">{{common.warning}}</div>

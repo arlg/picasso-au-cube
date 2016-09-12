@@ -1,0 +1,88 @@
+@media screen and (min-width: 1368px), screen and (min-height: 900px) {
+
+    // /****
+    //     AUTOPORTRAIT
+    // ****/
+
+    .mod-auto-step{
+        h3{
+            font-size: 44px;
+        }
+    }
+
+    .mod-auto-wrapper .auto-button{
+        font-size: 24px;
+
+        .square{
+            @include square(20px);
+        }
+
+    }
+
+    .mod-auto-step.mod-auto-gallery{
+        .gallery-container{
+            height: 510px;
+        }
+    }
+
+
+    // /****
+    //     FOOTER
+    // ****/
+    .section-footer{
+
+        .content{
+            top: 57px;
+        }
+
+        .background .title-underline{
+            top: 122px;
+            padding: 0 0 0 60px;
+        }
+
+    }
+
+    .section-footer .content p, .section-footer .content li{
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    // /****
+    //     MODULES
+    // ****/
+    .moreinfo-layer{
+        .text-under{
+            font-size: 22px;
+
+            &.smaller{
+                font-size: 19px;                
+            }
+        }
+    }
+
+    /*****
+        TITLE
+    *****/
+    .mod-main-module h2{
+        font-size: 50px;
+
+        .background{
+            height: 50px;
+        }
+    }
+
+    .mod-main-module header ul li.active{
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 1600px){
+    .section-footer .content p, .section-footer .content li{
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .section-footer .content .footer-section-content-inside{
+        margin: 60px 0 0 0;
+    }
+}

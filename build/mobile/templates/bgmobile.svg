@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 1136 640" enable-background="new 0 0 1136 640" xml:space="preserve" preserveAspectRatio="xMinYMin slice">
+
+
+<g id="clip">
+  <clipPath id="mask-trigger-1">
+          <path d="M15,86.333L212.333 85 357 188.333 101.667 186.333 z" />
+      </clipPath>
+      <clipPath id="mask-trigger-2">
+          <path d="M269.667,-9.667L221 81 360.334 183 399.667 49 z" />
+      </clipPath>
+      <clipPath id="mask-trigger-3">
+          <path d="M404.334,51L367.001 188.333 569.668 176.333 604.334 51.667 z" />
+      </clipPath>
+      <clipPath id="mask-trigger-4">
+          <path d="M607.668,52.333L760.334 1.667 733.001 159.667 577.668 177.667 z" />
+      </clipPath>
+      <clipPath id="mask-trigger-5">
+          <path d="M766.334,3.667L738.334 157 945.668 191 975.668 32.333 z" />
+      </clipPath>
+      <clipPath id="mask-trigger-6">
+          <path d="M357.004,488.996L565.67 452.33 723.67 612.996 522.337 598.996 354.337 489.663 z" />
+      </clipPath>
+      <clipPath id="mask-trigger-7">
+          <path d="M626.999,306.999L575.67 450.996 733.67 613.663 791.004 470.996 z" />
+      </clipPath>
+      <clipPath id="mask-trigger-8">
+          <path d="M741.004,162.333L741.978 164.555 812.337 324.999 991.67 344.332 943.67 199.666 z" />
+      </clipPath>
+      <clipPath id="mask-trigger-9">
+          <path d="M577.004,182.333L735.67 164.333 806.337 326.999 626.337 296.999 z" />
+      </clipPath>
+      <clipPath id="mask-trigger-10">
+          <path d="M366.337,195.666L573.004 182.332 621.67 299.666 399.67 344.332 z" />
+      </clipPath>
+      <clipPath id="mask-trigger-11">
+          <path d="M359.67,196.998L391.003 344.998 145.67 354.998 106.337 193.665 z" />
+      </clipPath>
+      <clipPath id="mask-trigger-12">
+          <path d="M8.337,542.996L111.003 498.996 252.337 608.329 68.337 626.996 z" />
+      </clipPath>
+      <clipPath id="mask-trigger-13">
+          <path d="M145.666,361.666L120.337 489.664 349.67 483.664 393.67 352.331 z" />
+      </clipPath>
+      <clipPath id="mask-trigger-14">
+          <path d="M399.004,350.997L621.671 305.664 569.671 444.33 356.337 482.33 z" />
+      </clipPath>
+      <clipPath id="mask-trigger-15">
+          <path d="M631.671,306.33L797.671 470.33 941.004 469.663 804.337 334.33 z" />
+      </clipPath>
+      <clipPath id="mask-trigger-16">
+          <path d="M815,334.333L997.003 349.663 1111.003 466.33 948.337 468.33 z" />
+      </clipPath>
+      <clipPath id="mask-trigger-17">
+          <path d="M949.67,475.663L1113.003 474.996 1067.67 629.663 891.67 630.33 z" />
+      </clipPath>
+      <clipPath id="mask-trigger-18">
+          <path d="M941.67,476.33L887.003 628.33 739.003 618.33 798.337 477.663 z" />
+      </clipPath>
+      <clipPath id="mask-trigger-19">
+          <path d="M121.67,496.996L347.67 490.996 513.67 599.662 258.337 606.329 z" />
+      </clipPath>
+    </g>
+     <image x="13px" y="45px" clip-path="url(#mask-trigger-1)" height="146px" width="365px" xlink:href="{{baseurl}}img/allvideos/01-aliment.jpg" preserveAspectRatio="xMidYMin slice"></image>
+     <image x="190px" y="0px" clip-path="url(#mask-trigger-2)" height="190px" width="300px" xlink:href="{{baseurl}}img/allvideos/01-animal.jpg" preserveAspectRatio="xMidYMin slice"></image>
+     <image x="365px" y="40" clip-path="url(#mask-trigger-3)" height="220px" width="250px" xlink:href="{{baseurl}}img/allvideos/01-couleur.jpg" preserveAspectRatio="xMidYMin slice"></image>
+     <image x="580px" y="0px" clip-path="url(#mask-trigger-4)" height="192px" width="250px" xlink:href="{{baseurl}}img/allvideos/01-jeu.jpg" preserveAspectRatio="xMidYMin slice"></image>
+     <image x="734px" y="0px" clip-path="url(#mask-trigger-5)" height="203px" width="253px" xlink:href="{{baseurl}}img/allvideos/01-lieu.jpg" preserveAspectRatio="xMidYMin slice"></image>
+     <image x="355px" y="440px" clip-path="url(#mask-trigger-6)" height="226px" width="373" xlink:href="{{baseurl}}img/allvideos/01-mot.jpg" preserveAspectRatio="xMidYMin slice"></image>
+     <image x="560px" y="270px" clip-path="url(#mask-trigger-7)" height="360px" width="251px" xlink:href="{{baseurl}}img/allvideos/01-musique.jpg" preserveAspectRatio="xMidYMin slice"></image>
+     <image x="730px" y="150px" clip-path="url(#mask-trigger-8)" height="200px" width="270px" xlink:href="{{baseurl}}img/allvideos/01-objet.jpg" preserveAspectRatio="xMidYMin slice"></image>
+     <image x="555" y="125px" clip-path="url(#mask-trigger-9)" height="265px" width="266px" xlink:href="{{baseurl}}img/allvideos/01-texture.jpg" preserveAspectRatio="xMidYMin slice"></image>
+     <image x="346" y="125px" clip-path="url(#mask-trigger-10)" height="320px" width="280px" xlink:href="{{baseurl}}img/allvideos/01-vegetal.jpg" preserveAspectRatio="xMidYMin slice"></image>
+     <image x="100" y="150px" clip-path="url(#mask-trigger-11)" height="236px" width="300px" xlink:href="{{baseurl}}img/allvideos/03-collage-david.jpg" preserveAspectRatio="xMidYMin slice"></image>
+     <image x="0" y="495px" clip-path="url(#mask-trigger-12)" height="130px" width="262px" xlink:href="{{baseurl}}img/allvideos/03-collage-lemagny.jpg" preserveAspectRatio="xMidYMin slice"></image>
+     <image x="100" y="295px" clip-path="url(#mask-trigger-13)" height="213px" width="313px" xlink:href="{{baseurl}}img/allvideos/03-epure.jpg" preserveAspectRatio="xMidYMin slice"></image>
+     <image x="352px" y="290px" clip-path="url(#mask-trigger-14)" height="196px" width="283px" xlink:href="{{baseurl}}img/allvideos/03-jeudemot-tal.jpg" preserveAspectRatio="xMidYMin slice"></image>
+     <image x="590px" y="297px" clip-path="url(#mask-trigger-15)" height="200px" width="380px" xlink:href="{{baseurl}}img/allvideos/03-jeudemots.jpg" preserveAspectRatio="xMidYMin slice"></image>
+     <image x="809" y="332px" clip-path="url(#mask-trigger-16)" height="160px" width="250px" xlink:href="{{baseurl}}img/allvideos/03-recuperation.jpg" preserveAspectRatio="xMidYMin slice"></image>
+    <image x="840" y="425px" clip-path="url(#mask-trigger-17)" height="250" width="300" xlink:href="{{baseurl}}img/allvideos/03-unseultrait-trouve.jpg" preserveAspectRatio="xMidYMin slice"></image>
+    <image x="756" y="450px" clip-path="url(#mask-trigger-18)" height="210px" width="190px" xlink:href="{{baseurl}}img/allvideos/03-volumeaplat-bosvot.jpg" preserveAspectRatio="xMidYMin slice"></image>
+    <image x="110" y="475px" clip-path="url(#mask-trigger-19)" height="160" width="412px" xlink:href="{{baseurl}}img/allvideos/03-volumeaplat-feuvrier.jpg" preserveAspectRatio="xMidYMin slice"></image>
+
+  
+<g id="triggers">
+	<path data-id="nS9Q0C7m9R0" d="M15,86.333L212.333 85 357 188.333 101.667 186.333 z" fill="#EF412E"/>
+	<path data-id="nS9Q0C7m9R0" d="M269.667,-9.667L221 81 360.334 183 399.667 49 z" fill="#EF412E"/>
+	<path data-id="nS9Q0C7m9R0" d="M404.334,51L367.001 188.333 569.668 176.333 604.334 51.667 z" fill="#EF412E"/>
+	<path data-id="nS9Q0C7m9R0" d="M607.668,52.333L760.334 1.667 733.001 159.667 577.668 177.667 z" fill="#EF412E"/>
+	<path data-id="nS9Q0C7m9R0" d="M766.334,3.667L738.334 157 945.668 191 975.668 32.333 z" fill="#EF412E"/>
+	<path data-id="nS9Q0C7m9R0" d="M981.001,33L1086.334 9 1075.668 144.333 950.334 189.667 z" fill="#EF412E"/>
+	<path data-id="nS9Q0C7m9R0" d="M948.335,199L1077.669 147.666 1129.002 310.333 998.335 341.666 z" fill="#EF412E"/>
+	<path data-id="nS9Q0C7m9R0" d="M741.004,162.333L741.978 164.555 812.337 324.999 991.67 344.332 943.67 199.666 z" fill="#EF412E"/>
+	<path data-id="nS9Q0C7m9R0" d="M577.004,182.333L735.67 164.333 806.337 326.999 626.337 296.999 z" fill="#EF412E"/>
+	<path data-id="nS9Q0C7m9R0" d="M366.337,195.666L573.004 182.332 621.67 299.666 399.67 344.332 z" fill="#EF412E"/>
+	<path data-id="nS9Q0C7m9R0" d="M359.67,196.998L391.003 344.998 145.67 354.998 106.337 193.665 z" fill="#EF412E"/>
+	<path data-id="nS9Q0C7m9R0" d="M39.67,410.331L140.337 364.998 114.337 490.998 4.337 536.998 z" fill="#EF412E"/>
+	<path data-id="nS9Q0C7m9R0" d="M145.666,361.666L120.337 489.664 349.67 483.664 393.67 352.331 z" fill="#EF412E"/>
+	<path data-id="nS9Q0C7m9R0" d="M399.004,350.997L621.671 305.664 569.671 444.33 356.337 482.33 z" fill="#EF412E"/>
+	<path data-id="nS9Q0C7m9R0" d="M631.671,306.33L797.671 470.33 941.004 469.663 804.337 334.33 z" fill="#EF412E"/>
+	<path data-id="nS9Q0C7m9R0" d="M815,334.333L997.003 349.663 1111.003 466.33 948.337 468.33 z" fill="#EF412E"/>
+	<path data-id="nS9Q0C7m9R0" d="M949.67,475.663L1113.003 474.996 1067.67 629.663 891.67 630.33 z" fill="#EF412E"/>
+	<path data-id="nS9Q0C7m9R0" d="M941.67,476.33L887.003 628.33 739.003 618.33 798.337 477.663 z" fill="#EF412E"/>
+	<path data-id="nS9Q0C7m9R0" d="M626.999,306.999L575.67 450.996 733.67 613.663 791.004 470.996 z" fill="#EF412E"/>
+	<path data-id="nS9Q0C7m9R0" d="M357.004,488.996L565.67 452.33 723.67 612.996 522.337 598.996 354.337 489.663 z" fill="#EF412E"/>
+	<path data-id="nS9Q0C7m9R0" d="M121.67,496.996L347.67 490.996 513.67 599.662 258.337 606.329 z" fill="#EF412E"/>
+	<path data-id="nS9Q0C7m9R0" d="M8.337,542.996L111.003 498.996 252.337 608.329 68.337 626.996 z" fill="#EF412E"/>
+</g>
+<g id="bg">
+	<path d="M11,83.333L-15.833 30 -46.667 88.667 z" fill="#F9AD9C"/>
+	<path d="M143.25,-38.5L215.25 78 277.5 -44.5 z" fill="#F9AD9C"/>
+	<path d="M401.25,44L385.5 -29.5 271.5 -14.25 z" fill="#F9AD9C"/>
+	<path d="M405.667,44.333L391.667 -29.667 641 -32 603.333 46.333 z" fill="#F9AD9C"/>
+	<path d="M607.334,45.667L647.667 -31.667 752.334 -0.333 z" fill="#F9AD9C"/>
+	<path d="M761.334,-1.333L977.334 27.333 953.334 -33.667 z" fill="#F9AD9C"/>
+	<path d="M983,25.5L960 -34 1070.5 -41 1086 1 z" fill="#F9AD9C"/>
+	<path d="M1090.5,7L1200 -48.5 1170.5 142 1080.5 139.5 z" fill="#F9AD9C"/>
+	<path d="M1084.5,144.5L1191 155 1133.5 309.5 z" fill="#F9AD9C"/>
+	<path d="M1001.5,348.5L1128 317.5 1215.5 394.5 1152 460.5 1116.5 465 z" fill="#F9AD9C"/>
+	<path d="M1119,475L1226 464 1198 627 1074 629.5 z" fill="#F9AD9C"/>
+	<path d="M1071.5,639.5L1073 633.5 1195.5 633.5 1172.5 696 1056.5 711 z" fill="#F9AD9C"/>
+	<path d="M1066.5,634L1048 711.5 851 713.5 889.5 635 z" fill="#F9AD9C"/>
+	<path d="M884.5,634L840 713.5 664.5 717 735 621 z" fill="#F9AD9C"/>
+	<path d="M725.5,619.5L652 716.5 536 718 523 603.5 z" fill="#F9AD9C"/>
+	<path d="M516.5,604L526.5 715.5 330 723.5 262 611.5 z" fill="#F9AD9C"/>
+	<path d="M256.5,613L322 721.5 25 721.5 69 630.5 z" fill="#F9AD9C"/>
+	<path d="M62,630.5L8.5 717.5 -88 704.5 -21 568.5 4.5 547 z" fill="#F9AD9C"/>
+	<path d="M-28,406L35 411 -7.5 554 z" fill="#F9AD9C"/>
+	<path d="M-0.5,402.5L-78 366 135 362 38 407.5 z" fill="#F9AD9C"/>
+	<path d="M27,358L-33.5 362 -67.5 199.5 -14.5 189 -1 220 z" fill="#F9AD9C"/>
+	<path d="M-8,184L99.5 194 138.5 358 31.5 357 5 223.5 z" fill="#F9AD9C"/>
+	<path d="M-44.5,92.5L10 88 95.5 187.5 0 179.5 -48.5 175 z" fill="#F9AD9C"/>
+	<path d="M208,81L15 84 -51 -64 109 -88 z" fill="#F8AC9B"/>
+</g>
+
+</svg>

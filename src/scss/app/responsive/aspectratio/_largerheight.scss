@@ -1,0 +1,76 @@
+@media screen and (max-aspect-ratio: 1368/868) { 
+    
+    /****
+        AUTOPORTRAIT
+    ****/
+    .mod-auto-wrapper{
+        left: 29vh;
+        top: 26vh;
+        width: 46vh;
+    }
+
+    .mod-auto-gallery{
+        left: 29vh;
+        top: 26vh;
+        width: 77vh;
+        height: 41vh;
+    }
+    
+    .moreinfo-layer{
+        left: 42vh;
+        top: 52vh;
+        width: 80vh;
+
+        .text-under{
+            
+        }
+    }
+
+    //Video
+    .mod-video{
+        left: 26vh;
+        top: 21vh;
+    }
+
+    .video-play-button{
+        left: 80vh;
+        top: 42vh;
+    }
+
+    /****
+        MODULES
+    *****/
+    .moreinfo-layer {
+        left: 42vh;
+        top: 52vh;
+        width: 80vh;
+    }
+
+    /****
+        NORATIO
+    ****/
+    .no-ratio{
+
+        .mod-auto-wrapper{
+            left: 18vw;
+            top: 31vh;
+            width: 33vw;
+
+        }
+
+        .mod-video{
+            left: 22vh;
+            top: 21vh;
+        }
+
+        /****
+            MODULES
+        *****/
+        .moreinfo-layer {
+            left: 42vh;
+            top: 52vh;
+            width: 80vh;
+        }
+
+    }
+}

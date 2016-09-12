@@ -1,0 +1,24 @@
+/***
+    RESPONSIVE STUFF
+***/
+
+@media screen and (max-width: 1024px) {
+    #svg, #svgclip, .content-wrapper{
+        width: 1024px;   
+    }
+}
+
+@import "aspectratio/largerheight";
+@import "aspectratio/largerwidth";
+
+@import "aspectratio/_1_under1024.scss";
+@import "aspectratio/_2_under1120.scss";
+
+@import "aspectratio/_3_above1120.scss";
+@import "aspectratio/_4_above1200.scss";
+@import "aspectratio/_5_above1368.scss";
+
+
+@import "aspectratio/_ipad.scss";
+
+@import "aspectratio/noratio.scss";

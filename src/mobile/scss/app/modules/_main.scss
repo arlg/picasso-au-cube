@@ -1,0 +1,55 @@
+.content-wrapper{
+    position: absolute;
+    @include square(100%);
+    overflow: hidden;
+}
+
+.section-main{
+    position: absolute;
+    z-index: 2;
+    @include square(100%);
+    
+    // Layer with fixed elements / non-interactive
+    .flat-layer{
+        @include square(100%);
+        pointer-events: none;
+    }
+
+    .right{
+        float: left;
+        width: 40%;
+        text-align: left;
+        margin: 0 0 0 10px;
+        font: 12px/14px Helvetica, Arial, sans-serif;
+        
+        h2{
+            font-weight: bold;
+            font: 14px/17px Helvetica, Arial, sans-serif;
+        }
+    }
+}
+b{
+    font-weight: bold;
+}
+.mod-main-module{
+    display: none;
+
+    &.active{
+        display: block;
+    }
+}
+
+.dg.ac{
+    z-index: 9999999 !important;
+}
+
+
+
+.notsupported{
+    color: grey;
+    display: none;
+
+    &.active{
+        display: block;
+    }
+}

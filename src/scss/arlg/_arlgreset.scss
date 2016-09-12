@@ -1,0 +1,28 @@
+a{
+	text-decoration: none;
+}
+
+img{
+    border: 0;
+    vertical-align: bottom; // or middle
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 50%; // 75% origin
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}

@@ -1,0 +1,57 @@
+@media screen and (max-width: 1120px) and (max-height: 730px){ 
+    /****
+    //     AUTOPORTRAIT
+    // ****/
+
+    .mod-auto-step{
+        h3{
+            font-size: 24px;
+        }
+
+        .mod-auto-left{
+
+        }
+    }
+
+    .mod-auto-wrapper .auto-button{
+        font-size: 17px;
+
+        .square{
+            @include square(15px);
+            margin:  0 5px 0 0;
+        }
+
+
+        //end
+        &.mod-auto-button-end-share{
+            margin: 0 0 12px 7px;
+        }
+    }
+
+    .mod-auto-step.mod-auto-gallery .gallery-container{
+        height: 325px;
+    }
+
+    /*****
+        TITLE
+    *****/
+    .mod-main-module h2{
+        font-size: 30px;
+
+        .background{
+            height: 30px;
+        }
+    }
+
+    .mod-main-module header ul li.active{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1240px){ 
+
+    .section-footer .content h4{
+        font-size: 54px;
+    }
+
+}
