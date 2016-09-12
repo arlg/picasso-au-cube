@@ -13,3 +13,4 @@ The project uses :
 - SNAP SVG
 - Twig
 - the face detection lib : https://github.com/auduno/clmtrackr
+- JSfeat : https://github.com/inspirit/jsfeat
